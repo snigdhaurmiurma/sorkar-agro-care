@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        // Auto-redirect /admin or /admin/ to admin.html
+        var path = window.location.pathname;
+        if (path.endsWith('/admin') || path.endsWith('/admin/')) {
+            window.location.replace('admin.html');
+        } else {
+            window.location.replace('index.html');
+        }
+    </script>
+    <title>রিডাইরেক্ট হচ্ছে...</title>
+</head>
+<body style="font-family: sans-serif; text-align: center; padding-top: 50px;">
+    <p>অপেক্ষা করুন, রিডাইরেক্ট করা হচ্ছে...</p>
+    <p><a href="index.html">হোমপেজে যান</a> | <a href="admin.html">অ্যাডমিন প্যানেল</a></p>
+</body>
+</html>

@@ -1062,12 +1062,12 @@
                 <p class="text-sm font-medium mb-3">
                     হটলাইন / হোয়াটসঅ্যাপ: <a href="tel:01708938787" class="text-yellow-400 hover:underline font-bold">01708-938787</a>
                 </p>
-                <div class="text-xs text-slate-500 flex items-center justify-center gap-2">
+                <div class="text-xs text-slate-500 flex flex-wrap items-center justify-center gap-2">
                     <span>© 2026 Sorkar Agro Care. সর্বস্বত্ব সংরক্ষিত।</span>
                     <span>•</span>
-                    <button type="button" onclick="openAdminModal()" class="text-slate-500 hover:text-slate-300 transition text-[11px] underline flex items-center gap-1 cursor-pointer">
-                        <i class="fa-solid fa-lock text-[10px]"></i> অ্যাডমিন প্যানেল
-                    </button>
+                    <a href="admin.html" class="inline-flex items-center gap-1 text-slate-400 hover:text-white bg-slate-800 hover:bg-slate-700 px-2.5 py-1 rounded-lg transition text-[11px] font-medium border border-slate-700">
+                        <i class="fa-solid fa-lock text-[10px] text-indigo-400"></i> অ্যাডমিন প্যানেল
+                    </a>
                 </div>
             </div>
         </footer>
@@ -1715,15 +1715,7 @@
         // 🔒 10. MERCHANT ADMIN DASHBOARD LOGIC
         // ==========================================
         function openAdminModal() {
-            const isAuth = sessionStorage.getItem('sorkar_admin_auth');
-            if (isAuth === 'true') {
-                showAdminDashboard();
-            } else {
-                document.getElementById('admin-login-modal').classList.remove('hidden');
-                document.getElementById('admin-pin-input').value = '';
-                document.getElementById('admin-pin-error').classList.add('hidden');
-                setTimeout(() => document.getElementById('admin-pin-input').focus(), 150);
-            }
+            window.location.href = 'admin.html';
         }
 
         function closeAdminLoginModal() {
