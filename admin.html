@@ -260,7 +260,7 @@
                         <div>
                             <label class="block text-xs font-bold text-slate-700 mb-1">প্যাকেজ নির্বাচন</label>
                             <select id="man-product" onchange="updateManualPrice()" class="w-full text-xs p-3 rounded-xl border border-slate-300 outline-none focus:border-indigo-500 font-bold">
-                                <option value="700">(১০ শতক); 1x1=2 kg - ৳700</option>
+                                <option value="600">(১০ শতক); 1x1=2 kg - ৳600</option>
                                 <option value="1400">(২০ শতক); 2x2=4 kg - ৳1,400</option>
                                 <option value="2100">(৩০ শতক); 3x3=6 kg - ৳2,100</option>
                                 <option value="2800">(৪০ শতক); 4x4=8 kg - ৳2,800</option>
@@ -274,7 +274,7 @@
                     </div>
                     <div class="p-3 bg-slate-50 rounded-xl flex items-center justify-between text-sm font-bold border border-slate-200">
                         <span class="text-slate-600">মোট ক্যাশ অন ডেলিভারি বিল:</span>
-                        <span class="text-indigo-600 text-lg font-black" id="man-total-display">৳700</span>
+                        <span class="text-indigo-600 text-lg font-black" id="man-total-display">৳600</span>
                     </div>
 
                     <div class="flex gap-2 pt-2">
@@ -657,7 +657,7 @@
         }
 
         function updateManualPrice() {
-            const price = parseInt(document.getElementById('man-product').value) || 700;
+            const price = parseInt(document.getElementById('man-product').value) || 600;
             const qty = parseInt(document.getElementById('man-qty').value) || 1;
             document.getElementById('man-total-display').innerText = '৳' + (price * qty);
         }
@@ -669,7 +669,7 @@
             const address = document.getElementById('man-address').value.trim();
             const sel = document.getElementById('man-product');
             const prodText = sel.options[sel.selectedIndex].text.split(' - ')[0];
-            const price = parseInt(sel.value) || 700;
+            const price = parseInt(sel.value) || 600;
             const qty = parseInt(document.getElementById('man-qty').value) || 1;
             const total = price * qty;
 
@@ -702,7 +702,7 @@
         // 9. DEMO ORDERS GENERATOR
         function addDemoOrder() {
             const demos = [
-                { id: 'SAC-7812', name: 'আব্দুল কাদের', phone: '01711223344', address: 'গ্রাম: চরপাড়া, থানা: মুক্তাগাছা, জেলা: ময়মনসিংহ', product: '(১০ শতক); 1x1=2 kg', quantity: 1, price: 700, total: 700, status: 'নতুন (Pending)' },
+                { id: 'SAC-7812', name: 'আব্দুল কাদের', phone: '01711223344', address: 'গ্রাম: চরপাড়া, থানা: মুক্তাগাছা, জেলা: ময়মনসিংহ', product: '(১০ শতক); 1x1=2 kg', quantity: 1, price: 600, total: 600, status: 'নতুন (Pending)' },
                 { id: 'SAC-5491', name: 'মোঃ রফিকুল ইসলাম', phone: '01899887766', address: 'মণিরামপুর বাজার, যশোর', product: '(২০ শতক); 2x2=4 kg', quantity: 1, price: 1400, total: 1400, status: 'কনফার্মড (Confirmed)' }
             ];
             const now = new Date();
