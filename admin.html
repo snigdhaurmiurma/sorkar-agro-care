@@ -261,10 +261,10 @@
                             <label class="block text-xs font-bold text-slate-700 mb-1">প্যাকেজ নির্বাচন</label>
                             <select id="man-product" onchange="updateManualPrice()" class="w-full text-xs p-3 rounded-xl border border-slate-300 outline-none focus:border-indigo-500 font-bold">
                                 <option value="600">(১০ শতক); 1x1=2 kg - ৳600</option>
-                                <option value="1400">(২০ শতক); 2x2=4 kg - ৳1,400</option>
-                                <option value="2100">(৩০ শতক); 3x3=6 kg - ৳2,100</option>
-                                <option value="2800">(৪০ শতক); 4x4=8 kg - ৳2,800</option>
-                                <option value="3500">(৫০ শতক); 5x5=10 kg - ৳3,500</option>
+                                <option value="1200">(২০ শতক); 2x2=4 kg - ৳1,200</option>
+                                <option value="1800">(৩০ শতক); 3x3=6 kg - ৳1,800</option>
+                                <option value="2400">(৪০ শতক); 4x4=8 kg - ৳2,400</option>
+                                <option value="3000">(৫০ শতক); 5x5=10 kg - ৳3,000</option>
                             </select>
                         </div>
                         <div>
@@ -703,7 +703,7 @@
         function addDemoOrder() {
             const demos = [
                 { id: 'SAC-7812', name: 'আব্দুল কাদের', phone: '01711223344', address: 'গ্রাম: চরপাড়া, থানা: মুক্তাগাছা, জেলা: ময়মনসিংহ', product: '(১০ শতক); 1x1=2 kg', quantity: 1, price: 600, total: 600, status: 'নতুন (Pending)' },
-                { id: 'SAC-5491', name: 'মোঃ রফিকুল ইসলাম', phone: '01899887766', address: 'মণিরামপুর বাজার, যশোর', product: '(২০ শতক); 2x2=4 kg', quantity: 1, price: 1400, total: 1400, status: 'কনফার্মড (Confirmed)' }
+                { id: 'SAC-5491', name: 'মোঃ রফিকুল ইসলাম', phone: '01899887766', address: 'মণিরামপুর বাজার, যশোর', product: '(২০ শতক); 2x2=4 kg', quantity: 1, price: 1200, total: 1200, status: 'কনফার্মড (Confirmed)' }
             ];
             const now = new Date();
             demos.forEach(d => {
