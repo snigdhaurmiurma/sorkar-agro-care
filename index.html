@@ -1,0 +1,1942 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <title>Sorkar Agro Care | ওয়াটার প্ল্যাঙ্কটন ও ডাবল গ্রোথ প্লাস</title>
+    <meta name="description" content="Sorkar Agro Care - ওয়াটার প্ল্যাঙ্কটন প্লাস এবং ডাবল গ্রোথ প্লাস। মৎস্য খামারিদের বিশ্বস্ত বন্ধু। অধিক ফলন ও মুনাফা নিশ্চিত করুন।">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230284c7'/><path d='M25 50 C40 30 65 30 75 50 C65 70 40 70 25 50 Z M75 50 L90 35 L90 65 Z' fill='%23ffffff'/><circle cx='40' cy='46' r='4' fill='%230284c7'/></svg>">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Sorkar Agro Care | ওয়াটার প্ল্যাঙ্কটন ও ডাবল গ্রোথ প্লাস" />
+    <meta property="og:description" content="ওয়াটার প্ল্যাঙ্কটন প্লাস এবং ডাবল গ্রোথ প্লাস - একটি পূর্ণাঙ্গ সমাধান যা আপনার পুকুরের পরিবেশ ঠিক রাখে এবং মাছের দ্রুত বৃদ্ধি নিশ্চিত করে।" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/banner.jpg" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Noto+Sans+Bengali:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: { 
+                extend: { 
+                    colors: { 
+                        primary: '#0284c7', // Sky-600
+                        secondary: '#ea580c', // Orange-600
+                        accent: '#16a34a' // Green-600
+                    },
+                    fontFamily: {
+                        bengali: ['"Hind Siliguri"', '"Noto Sans Bengali"', 'sans-serif']
+                    }
+                } 
+            }
+        }
+    </script>
+    
+    <style type="text/tailwindcss">
+        @layer components {
+            input[type="text"], 
+            input[type="email"], 
+            input[type="number"], 
+            input[type="tel"], 
+            textarea, 
+            select {
+                @apply w-full border-gray-200 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 py-3 px-4 transition-all duration-200 ease-in-out text-gray-800 placeholder-gray-400 bg-white !important;
+            }
+            input[type="checkbox"], input[type="radio"] {
+                @apply w-4 h-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500 !important;
+                padding: 0 !important;
+                box-shadow: none !important;
+            }
+        }
+    </style>
+    
+    <style>
+        :root {
+            --bn-font: 'Hind Siliguri', 'Noto Sans Bengali', sans-serif;
+            --glow-color: rgba(2, 132, 199, 0.35);
+        }
+        body {
+            font-family: var(--bn-font);
+            margin: 0;
+            background: #f8fafc;
+            color: #1e293b;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            box-shadow: 0 10px 40px -10px rgba(2, 132, 199, 0.1);
+            transition: all .5s cubic-bezier(.175, .885, .32, 1.275);
+        }
+        .float-anim {
+            animation: float 5s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-16px); }
+        }
+        .btn-premium {
+            background: linear-gradient(135deg, #0284c7 0%, #0369a1 50%, #0c4a6e 100%);
+            background-size: 200% auto;
+            transition: all .5s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            color: #fff;
+            font-weight: 800;
+            box-shadow: 0 10px 25px -5px rgba(2, 132, 199, 0.4);
+            cursor: pointer;
+        }
+        .btn-premium:hover {
+            background-position: right center;
+            transform: scale(1.02);
+            box-shadow: 0 0 30px rgba(2, 132, 199, 0.6);
+        }
+        .btn-amber {
+            background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%);
+            box-shadow: 0 10px 25px -5px rgba(234, 88, 12, 0.4);
+        }
+        .shine-effect {
+            position: relative;
+            overflow: hidden;
+        }
+        .shine-effect::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -100%;
+            width: 50%;
+            height: 200%;
+            background: rgba(255, 255, 255, 0.4);
+            transform: rotate(30deg);
+            animation: shineAnim 4s infinite;
+        }
+        @keyframes shineAnim {
+            0% { left: -100%; }
+            20% { left: 150%; }
+            100% { left: 150%; }
+        }
+        .mesh-blur {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: radial-gradient(circle at 5% 10%, rgba(224, 242, 254, 0.5) 0%, transparent 40%),
+                        radial-gradient(circle at 95% 90%, rgba(254, 243, 199, 0.5) 0%, transparent 40%),
+                        #fff;
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 15px;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 6px;
+            background: linear-gradient(90deg, #0284c7, #ea580c);
+            border-radius: 10px;
+        }
+        .slider-arrow {
+            width: 42px;
+            height: 42px;
+            background: rgba(255, 255, 255, 0.98);
+            color: #0284c7;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+            z-index: 30;
+            cursor: pointer;
+            border: 1px solid rgba(2, 132, 199, 0.1);
+            transition: all .3s ease;
+        }
+        .blob {
+            position: absolute;
+            background: linear-gradient(135deg, rgba(2, 132, 199, 0.15), rgba(234, 88, 12, 0.05));
+            border-radius: 50%;
+            filter: blur(50px);
+            z-index: -1;
+            pointer-events: none;
+        }
+        /* Qty wrapper */
+        .rb-qty {
+            display: flex;
+            align-items: stretch;
+            border: 1px solid #e5e7eb;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            height: 30px;
+            width: 105px;
+        }
+        @media (min-width: 768px) {
+            .rb-qty { height: 36px; width: 125px; }
+        }
+        .rb-qty-btn {
+            width: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 1;
+            color: #6b7280;
+            background: #fff;
+            user-select: none;
+            border: 0;
+            outline: 0;
+            cursor: pointer;
+        }
+        @media (min-width: 768px) {
+            .rb-qty-btn { width: 38px; font-size: 20px; }
+        }
+        .rb-qty-btn:hover { background: #f9fafb; color: #4f46e5; }
+        .rb-qty-input {
+            flex: 1 1 auto;
+            width: 40px;
+            min-width: 40px;
+            text-align: center;
+            border: 0 !important;
+            outline: 0 !important;
+            background: transparent !important;
+            color: #111827 !important;
+            font-weight: 800 !important;
+            font-size: 15px !important;
+            line-height: 1 !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            box-shadow: none !important;
+            -moz-appearance: textfield;
+        }
+        .rb-qty-input::-webkit-outer-spin-button,
+        .rb-qty-input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        #billing-name, #billing-phone, #billing-address {
+            border: 2px solid #3b82f6 !important;
+            background-color: #ffffff !important;
+            color: #1f2937 !important;
+            transition: all 0.2s ease-in-out;
+        }
+        #billing-name:focus, #billing-phone:focus, #billing-address:focus {
+            border-color: #16a34a !important;
+            box-shadow: 0 0 0 4px #dcfce7 !important;
+            outline: none !important;
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col relative bg-gray-50 pb-20 md:pb-0">
+
+    <div class="mesh-blur"></div>
+
+    <!-- PURPLE FLOATING TOP TIMER -->
+    <div id="floating-timer" class="relative w-full text-white z-[999] shadow-2xl border-b border-indigo-400/30 backdrop-blur-sm bg-opacity-95 transition-all duration-300" style="background: #4c1d95;">
+        <div class="container mx-auto px-4 py-1.5 flex items-center justify-between max-w-3xl">
+            <!-- Text -->
+            <div class="text-white font-bold text-xs sm:text-sm hidden sm:flex items-center gap-2 whitespace-nowrap mr-4">
+                 <span class="animate-pulse text-yellow-300 text-lg">⚡</span> অফারটি শেষ হতে বাকি
+            </div>
+
+            <!-- Timer Digits -->
+            <div class="flex items-center gap-3 mx-auto sm:mx-0">
+                 <!-- Hours -->
+                 <div class="flex flex-col items-center gap-0.5">
+                     <div class="bg-white/10 border border-white/20 backdrop-blur text-white font-bold text-base md:text-xl rounded-md w-9 md:w-11 h-9 md:h-11 flex items-center justify-center shadow-lg" id="timer-hours">00</div>
+                     <span class="text-[9px] text-indigo-100 font-medium">ঘন্টা</span>
+                 </div>
+                 <div class="text-lg md:text-xl font-bold pb-3 text-white/50 mx-0">:</div>
+                 
+                 <!-- Minutes -->
+                 <div class="flex flex-col items-center gap-0.5">
+                     <div class="bg-white/10 border border-white/20 backdrop-blur text-white font-bold text-base md:text-xl rounded-md w-9 md:w-11 h-9 md:h-11 flex items-center justify-center shadow-lg" id="timer-minutes">29</div>
+                     <span class="text-[9px] text-indigo-100 font-medium">মিনিট</span>
+                 </div>
+                 <div class="text-lg md:text-xl font-bold pb-3 text-white/50 mx-0">:</div>
+
+                 <!-- Seconds -->
+                 <div class="flex flex-col items-center gap-0.5">
+                     <div class="bg-white text-indigo-900 font-bold text-base md:text-xl rounded-md w-9 md:w-11 h-9 md:h-11 flex items-center justify-center shadow-lg transform scale-105 border-2 border-yellow-400" id="timer-seconds">59</div>
+                     <span class="text-[9px] text-yellow-300 font-bold">সেকেন্ড</span>
+                 </div>
+            </div>
+
+            <!-- Order Button -->
+            <a href="#order-form" class="hidden sm:flex bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-300 hover:to-yellow-400 text-indigo-900 text-xs font-bold py-1.5 px-4 rounded-full shadow-lg shadow-yellow-500/30 items-center gap-1 transition transform hover:scale-105 ml-4 whitespace-nowrap">
+                অর্ডার করুন <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+        </div>
+    </div>
+
+    <!-- MAIN HEADER -->
+    <header class="relative w-full z-50 bg-white border-b border-gray-100 shadow-sm sticky top-0">
+        <div class="container mx-auto px-4 h-16 md:h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-2 group">
+                <div class="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-sky-600 to-blue-800 text-white rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <i class="fa-solid fa-fish-fins text-lg md:text-2xl"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-xl md:text-2xl font-black text-slate-800 leading-none">Sorkar <span class="text-sky-700">Agro Care</span></span>
+                    <span class="text-[9px] md:text-[10px] font-bold text-orange-600 tracking-widest uppercase">মৎস্য খামারিদের বিশ্বস্ত বন্ধু</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="#" class="text-sm font-bold text-slate-600 hover:text-sky-700 transition-colors">হোম</a>
+                <a href="#products" class="text-sm font-bold text-slate-600 hover:text-sky-700 transition-colors">পণ্যসমূহ</a>
+                <a href="#usage" class="text-sm font-bold text-slate-600 hover:text-sky-700 transition-colors">ব্যবহার বিধি</a>
+                <a href="#features" class="text-sm font-bold text-slate-600 hover:text-sky-700 transition-colors">উপকারিতা</a>
+                <a href="#reviews" class="text-sm font-bold text-slate-600 hover:text-sky-700 transition-colors">মতামত</a>
+            </nav>
+
+            <!-- Header Action Buttons -->
+            <div class="flex items-center gap-3 md:gap-4">
+                <a href="tel:01708938787" class="hidden md:flex items-center gap-2 text-sm font-bold text-slate-600 hover:text-sky-700 transition-colors bg-sky-50 px-4 py-2 rounded-full border border-sky-100 shadow-sm">
+                    <i class="fa-solid fa-phone-volume animate-pulse text-sky-600"></i><span>01708-938787</span>
+                </a>
+                <a href="#order-form" class="btn-premium px-5 py-2.5 rounded-full text-xs md:text-sm shadow-lg shadow-sky-200/50 hover:shadow-sky-300/50">
+                    অর্ডার করুন
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- HERO SECTION -->
+        <section class="relative pt-6 md:pt-10 pb-10 overflow-hidden">
+            <div class="blob -left-20 top-20 w-64 h-64 md:w-96 md:h-96"></div>
+            <div class="blob -right-20 top-40 w-80 h-80 md:w-[500px] md:h-[500px]"></div>
+            
+            <div class="container mx-auto px-4 max-w-5xl text-center">
+                <!-- Vietnam Technology Badge -->
+                <div class="inline-flex items-center gap-2 bg-sky-50 text-sky-700 px-4 py-1.5 rounded-full text-[11px] md:text-sm font-bold mb-3 border border-sky-100 uppercase tracking-widest shadow-sm">
+                    <span class="flex h-2 w-2 rounded-full bg-sky-500 animate-ping"></span> ভিয়েতনামিজ টেকনোলজি
+                </div>
+                
+                <h1 class="text-[36px] sm:text-[44px] md:text-6xl font-black mb-5 leading-[1.18] tracking-tight px-2">
+                    <span class="text-amber-600 font-extrabold drop-shadow-sm">
+                        🔥 ৭০০ টাকা • ২ কেজি মাত্র
+                    </span>
+                    <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-orange-600">
+                        অধিক ফলন ও মুনাফা নিশ্চিত করুন
+                    </span>
+                </h1>
+                
+                <p class="text-slate-600 text-sm md:text-lg mb-8 max-w-2xl mx-auto font-medium leading-relaxed">
+                    ওয়াটার প্ল্যাঙ্কটন প্লাস এবং ডাবল গ্রোথ প্লাস - একটি পূর্ণাঙ্গ সমাধান যা আপনার পুকুরের পরিবেশ ঠিক রাখে এবং মাছের দ্রুত বৃদ্ধি নিশ্চিত করে।
+                </p>
+                
+                <!-- Hero Image Carousel / Presentation -->
+                <div class="relative group mb-10 px-2 max-w-4xl mx-auto">
+                    <div class="absolute inset-0 bg-sky-600/10 blur-[80px] rounded-full scale-90 -z-10"></div>
+                    <div class="w-full max-w-[550px] mx-auto rounded-[2rem] md:rounded-[3rem] border-4 border-white shadow-2xl float-anim overflow-hidden bg-white ring-2 ring-sky-50/50 relative aspect-square">
+                        <div class="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-20">
+                            <button onclick="prevHeroSlide()" class="slider-arrow bg-white/80 hover:bg-white" aria-label="Previous Slide">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </button>
+                        </div>
+                        <div class="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-20">
+                            <button onclick="nextHeroSlideManual()" class="slider-arrow bg-white/80 hover:bg-white" aria-label="Next Slide">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+                        
+                        <img id="heroSlideImg" 
+                             src="images/banner.jpg" 
+                             onerror="this.src='https://sorkaragrocare.com/public/uploads/media/mmmmmmmmm-r-promotional-banner-o-202607291618.jpg'" 
+                             class="hero-slide relative z-0 w-full h-full object-contain bg-white transition-opacity duration-700 opacity-100 p-2" 
+                             alt="Water Plankton Plus & Double Growth Plus">
+                    </div>
+                </div>
+
+                <a href="#order-form" class="btn-premium shine-effect w-full md:w-auto text-lg md:text-2xl py-3 md:py-4 px-8 md:px-12 rounded-full">
+                    প্যাকেজ অর্ডার করুন <i class="fa-solid fa-cart-shopping ml-2"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- PRODUCT DETAILS SECTION -->
+        <section id="products" class="py-12 bg-slate-50/80 border-y border-sky-50">
+            <div class="container mx-auto px-4 max-w-6xl">
+                <div class="text-center mb-10">
+                    <h2 class="text-2xl md:text-5xl font-black text-slate-900 section-title">আমাদের প্রিমিয়াম পণ্যসমূহ</h2>
+                </div>
+                
+                <!-- Product 1: Water Plankton Plus -->
+                <div class="glass-card rounded-[2rem] p-6 md:p-10 mb-8 border-l-4 border-l-green-500 overflow-hidden relative">
+                    <div class="absolute top-0 right-0 p-8 opacity-5 pointer-events-none">
+                        <i class="fa-solid fa-leaf text-9xl"></i>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-8 items-center">
+                        <div class="w-full md:w-1/3">
+                            <img src="images/water-plankton-plus.webp" 
+                                 onerror="this.src='https://sorkaragrocare.com/public/uploads/media/4.webp'" 
+                                 alt="Water Plankton Plus" 
+                                 class="w-full rounded-2xl shadow-lg border-2 border-green-100 hover:scale-105 transition-transform duration-500 bg-white" 
+                                 loading="lazy">
+                        </div>
+                        <div class="w-full md:w-2/3 text-left">
+                            <div class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-bold mb-3">
+                                প্রাকৃতিক বুস্টার
+                            </div>
+                            <h3 class="text-2xl md:text-4xl font-black text-slate-900 mb-4">
+                                ওয়াটার প্ল্যাঙ্কটন প্লাস <span class="text-base font-normal text-slate-500">(Water Plankton Plus)</span>
+                            </h3>
+                            <p class="text-slate-600 mb-6 text-base md:text-lg leading-relaxed">
+                                এটি ভিয়েতনাম থেকে আমদানিকৃত একটি ১০০% প্রাকৃতিক এবং রাসায়নিক মুক্ত বুস্টার, যা আপনার পুকুরে মাছের জন্য একটি স্বাস্থ্যকর প্রাকৃতিক পরিবেশ তৈরি করতে সাহায্য করে।
+                            </p>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div class="bg-white p-4 rounded-xl border border-green-100 shadow-sm">
+                                    <h4 class="font-bold text-green-700 mb-2 flex items-center">
+                                        <i class="fa-solid fa-dna mr-2"></i>প্রধান কাজ
+                                    </h4>
+                                    <p class="text-sm text-slate-600">
+                                        পুকুরে প্রাকৃতিক ফাইটোপ্ল্যাঙ্কটন এবং জুওপ্ল্যাঙ্কটনের দ্রুত জন্ম ও বৃদ্ধি ঘটায়।
+                                    </p>
+                                </div>
+                                <div class="bg-white p-4 rounded-xl border border-green-100 shadow-sm">
+                                    <h4 class="font-bold text-green-700 mb-2 flex items-center">
+                                        <i class="fa-solid fa-droplet mr-2"></i>পানির গুণমান
+                                    </h4>
+                                    <p class="text-sm text-slate-600">
+                                        পুকুরের pH এবং TDS লেভেল স্থিতিশীল রাখে, অ্যামোনিয়া ও নাইট্রাইট কমায়।
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-4 bg-green-50 p-4 rounded-xl border border-green-200">
+                                <p class="font-bold text-green-800 flex items-center text-sm md:text-base">
+                                    <i class="fa-regular fa-clock mr-2 text-green-600 text-lg"></i>
+                                    মাত্র ৭২ ঘণ্টার মধ্যে পুকুরের পানি মাছের জন্য আদর্শ "সবুজ রঙ"-এ পরিণত হয়।
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2: Double Growth Plus -->
+                <div class="glass-card rounded-[2rem] p-6 md:p-10 border-l-4 border-l-orange-500 overflow-hidden relative">
+                    <div class="absolute top-0 right-0 p-8 opacity-5 pointer-events-none">
+                        <i class="fa-solid fa-arrow-trend-up text-9xl"></i>
+                    </div>
+                    <div class="flex flex-col md:flex-row-reverse gap-8 items-center">
+                        <div class="w-full md:w-1/3">
+                            <img src="images/double-growth-plus.webp" 
+                                 onerror="this.src='https://sorkaragrocare.com/public/uploads/media/3.webp'" 
+                                 alt="Double Growth Plus" 
+                                 class="w-full rounded-2xl shadow-lg border-2 border-orange-100 hover:scale-105 transition-transform duration-500 bg-white" 
+                                 loading="lazy">
+                        </div>
+                        <div class="w-full md:w-2/3 text-left">
+                            <div class="inline-block bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-xs font-bold mb-3">
+                                গ্রোথ সাপ্লিমেন্ট
+                            </div>
+                            <h3 class="text-2xl md:text-4xl font-black text-slate-900 mb-4">
+                                ডাবল গ্রোথ প্লাস <span class="text-base font-normal text-slate-500">(Double Growth Plus)</span>
+                            </h3>
+                            <p class="text-slate-600 mb-6 text-base md:text-lg leading-relaxed">
+                                এটি একটি উচ্চ কার্যকারিতা সম্পন্ন ওজন বাড়ানোর সাপ্লিমেন্ট, যা প্ল্যাঙ্কটন বুস্টারের পাশাপাশি ব্যবহার করা হয় সর্বোচ্চ ফলন পেতে।
+                            </p>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div class="bg-white p-4 rounded-xl border border-orange-100 shadow-sm">
+                                    <h4 class="font-bold text-orange-700 mb-2 flex items-center">
+                                        <i class="fa-solid fa-weight-scale mr-2"></i>ওজন বৃদ্ধি
+                                    </h4>
+                                    <p class="text-sm text-slate-600">
+                                        সাধারণ বৃদ্ধির হারের চেয়ে মাছের ওজন ৬০% পর্যন্ত বেশি বাড়াতে সাহায্য করে।
+                                    </p>
+                                </div>
+                                <div class="bg-white p-4 rounded-xl border border-orange-100 shadow-sm">
+                                    <h4 class="font-bold text-orange-700 mb-2 flex items-center">
+                                        <i class="fa-solid fa-sack-dollar mr-2"></i>খরচ সাশ্রয়
+                                    </h4>
+                                    <p class="text-sm text-slate-600">
+                                        খাবারের খরচ ৫০%–৭০% পর্যন্ত কমে, কারণ এটি FCR উন্নত করে।
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-4 bg-orange-50 p-4 rounded-xl border border-orange-200">
+                                <p class="font-bold text-orange-800 flex items-center text-sm md:text-base">
+                                    <i class="fa-solid fa-heart-pulse mr-2 text-orange-600 text-lg"></i>
+                                    মাছের রোগ প্রতিরোধ ক্ষমতা বাড়ায় এবং রেনু পোনার বাঁচার হার বৃদ্ধি করে।
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- USAGE & DOSAGE SECTION -->
+        <section id="usage" class="py-12 bg-white">
+            <div class="container mx-auto px-4 max-w-4xl">
+                <div class="bg-gradient-to-br from-sky-600 to-blue-800 rounded-[2.5rem] p-6 md:p-12 text-white shadow-2xl relative overflow-hidden">
+                    <div class="absolute -right-20 -top-20 w-80 h-80 bg-white/10 rounded-full blur-3xl"></div>
+                    <div class="relative z-10 text-center md:text-left flex flex-col md:flex-row items-center gap-8">
+                        <div class="flex-1">
+                            <h2 class="text-2xl md:text-4xl font-black mb-6 flex items-center justify-center md:justify-start">
+                                <i class="fa-solid fa-clipboard-list mr-3"></i>ব্যবহার ও প্রয়োগের মাত্রা
+                            </h2>
+                            <ul class="space-y-4 text-sky-100 text-base md:text-lg">
+                                <li class="flex items-start gap-3">
+                                    <i class="fa-solid fa-circle-check mt-1.5 text-orange-400 flex-shrink-0"></i>
+                                    <span><strong>সাধারণ মাত্রা:</strong> প্রতি শতাংশ (decimal) পুকুরের জন্য ১০০–১৫০ গ্রাম করে উভয় পণ্য একসাথে ব্যবহার করতে হবে।</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fa-solid fa-circle-check mt-1.5 text-orange-400 flex-shrink-0"></i>
+                                    <span><strong>আদর্শ গভীরতা:</strong> ৩ থেকে ৬ ফুট পানির গভীরতায় সবচেয়ে ভালো কাজ করে।</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fa-solid fa-circle-check mt-1.5 text-orange-400 flex-shrink-0"></i>
+                                    <span><strong>সময়সীমা:</strong> প্রয়োগের মাত্র ৭ দিন পর থেকেই মাছের উল্লেখযোগ্য বৃদ্ধি লক্ষ্য করা যায়।</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="w-full md:w-auto bg-white/10 p-6 rounded-2xl backdrop-blur-sm border border-white/20 text-center flex-shrink-0">
+                            <div class="text-5xl font-black text-orange-400 mb-2">৭ দিন</div>
+                            <div class="text-sm uppercase tracking-widest font-bold">এর মধ্যে রেজাল্ট</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURES SUMMARY -->
+        <section id="features" class="py-12 bg-slate-50 relative">
+            <div class="container mx-auto px-4 max-w-5xl text-center">
+                <h2 class="text-2xl md:text-4xl font-black text-slate-900 section-title mb-10">এক নজরে উপকারিতা</h2>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="bg-white p-5 rounded-2xl shadow-lg border-b-4 border-sky-500 hover:-translate-y-2 transition-transform duration-300">
+                        <div class="text-4xl text-sky-500 mb-3"><i class="fa-solid fa-water"></i></div>
+                        <h4 class="font-bold text-slate-800 text-base md:text-lg mb-1">সবুজ পানি</h4>
+                        <p class="text-xs text-slate-500">৭২ ঘণ্টার মধ্যে আদর্শ পরিবেশ</p>
+                    </div>
+                    <div class="bg-white p-5 rounded-2xl shadow-lg border-b-4 border-orange-500 hover:-translate-y-2 transition-transform duration-300">
+                        <div class="text-4xl text-orange-500 mb-3"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                        <h4 class="font-bold text-slate-800 text-base md:text-lg mb-1">৬০% বৃদ্ধি</h4>
+                        <p class="text-xs text-slate-500">সাধারণের চেয়ে বেশি ওজন</p>
+                    </div>
+                    <div class="bg-white p-5 rounded-2xl shadow-lg border-b-4 border-green-500 hover:-translate-y-2 transition-transform duration-300">
+                        <div class="text-4xl text-green-500 mb-3"><i class="fa-solid fa-wallet"></i></div>
+                        <h4 class="font-bold text-slate-800 text-base md:text-lg mb-1">৫০-৭০% সাশ্রয়</h4>
+                        <p class="text-xs text-slate-500">খাবারের খরচ কমে যায়</p>
+                    </div>
+                    <div class="bg-white p-5 rounded-2xl shadow-lg border-b-4 border-purple-500 hover:-translate-y-2 transition-transform duration-300">
+                        <div class="text-4xl text-purple-500 mb-3"><i class="fa-solid fa-shield-virus"></i></div>
+                        <h4 class="font-bold text-slate-800 text-base md:text-lg mb-1">রোগ প্রতিরোধ</h4>
+                        <p class="text-xs text-slate-500">সুস্থ ও সবল মাছ</p>
+                    </div>
+                </div>
+
+                <div class="mt-10 text-center">
+                    <a href="#order-form" class="btn-premium shine-effect w-full md:w-auto text-lg md:text-2xl py-3 md:py-4 px-8 md:px-12 rounded-full">
+                        অর্ডার করতে চাই <i class="fa-solid fa-cart-shopping ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CUSTOMER REVIEWS -->
+        <section id="reviews" class="py-12 bg-white text-center border-t border-gray-100">
+            <div class="container mx-auto px-4 max-w-5xl">
+                <span class="text-sky-600 font-black tracking-widest uppercase text-xs md:text-sm">কাস্টমার ফিডব্যাক</span>
+                <h2 class="text-3xl md:text-5xl font-black text-slate-900 mt-2 mb-10">খামারিদের সাফল্যের গল্প</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+                    <!-- Review 1 -->
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition">
+                        <div class="flex items-center gap-1 mb-3 text-orange-500">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 mb-4 text-sm leading-relaxed">
+                            "ওয়াটার প্ল্যাঙ্কটন ব্যবহার করার ৩ দিনের মধ্যেই আমার পুকুরের পানির কালার দারুণ এসেছে। মাছের খাবার খরচ আগের চেয়ে অনেক কমেছে।"
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-sky-200 rounded-full flex items-center justify-center text-sky-800 font-bold">R</div>
+                            <div>
+                                <p class="font-bold text-slate-900 text-sm">রফিক উল্লাহ</p>
+                                <p class="text-xs text-slate-500">ময়মনসিংহ</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Review 2 -->
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition">
+                        <div class="flex items-center gap-1 mb-3 text-orange-500">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 mb-4 text-sm leading-relaxed">
+                            "ডাবল গ্রোথ প্লাস ব্যবহার করে এবার আমি যেই ফলন পেয়েছি তা অবিশ্বাস্য। মাছের গ্রোথ দেখে আশেপাশের সবাই অবাক।"
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-orange-200 rounded-full flex items-center justify-center text-orange-800 font-bold">K</div>
+                            <div>
+                                <p class="font-bold text-slate-900 text-sm">কামাল হোসেন</p>
+                                <p class="text-xs text-slate-500">যশোর</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition">
+                        <div class="flex items-center gap-1 mb-3 text-orange-500">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 mb-4 text-sm leading-relaxed">
+                            "আগে মাছের নানা রোগ হতো, এখন মাছ একদম সুস্থ। সরকার এগ্রোর প্রোডাক্ট সত্যিই কাজ করে। ধন্যবাদ।"
+                        </p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-green-200 rounded-full flex items-center justify-center text-green-800 font-bold">S</div>
+                            <div>
+                                <p class="font-bold text-slate-900 text-sm">সেলিম রেজা</p>
+                                <p class="text-xs text-slate-500">বগুড়া</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="py-8 bg-slate-50 border-t border-gray-200">
+            <div class="container mx-auto px-4">
+                <div class="max-w-5xl mx-auto text-center">
+                    <h2 class="text-2xl md:text-3xl font-bold text-sky-800 mb-5 leading-tight">
+                        অর্ডার বা পরামর্শের জন্য যোগাযোগ করুন
+                    </h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <!-- WhatsApp -->
+                        <a href="https://wa.me/8801708938787" target="_blank" class="bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-4 px-6 rounded-xl shadow-lg flex items-center justify-center gap-3 text-lg transition transform hover:-translate-y-1">
+                            <i class="fab fa-whatsapp text-2xl"></i>
+                            <span>WhatsApp মেসেজ</span>
+                        </a>
+                        <!-- Messenger -->
+                        <a href="https://www.facebook.com/sorkaragrocareofficialbd" target="_blank" class="bg-[#0084FF] hover:bg-[#0078e7] text-white font-bold py-4 px-6 rounded-xl shadow-lg flex items-center justify-center gap-3 text-lg transition transform hover:-translate-y-1">
+                            <i class="fab fa-facebook-messenger text-2xl"></i>
+                            <span>Messenger চ্যাট</span>
+                        </a>
+                        <!-- Direct Call -->
+                        <a href="tel:01708938787" class="bg-slate-900 hover:bg-slate-800 text-white font-bold py-4 px-6 rounded-xl shadow-lg flex items-center justify-center gap-3 text-lg transition transform hover:-translate-y-1">
+                            <i class="fas fa-phone-alt text-xl text-yellow-400"></i>
+                            <span>সরাসরি কল: 01708-938787</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROMO OFFER SECTION -->
+        <section id="promo-offer" class="py-10 relative overflow-hidden bg-white mb-4 md:mb-0">
+            <div class="absolute -left-20 top-20 w-80 h-80 bg-sky-100 rounded-full mix-blend-multiply filter blur-3xl opacity-50"></div>
+            <div class="absolute -right-20 bottom-20 w-80 h-80 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-50"></div>
+            
+            <div class="container mx-auto px-4 relative z-10 text-center">
+                <div class="max-w-3xl mx-auto glass-card border border-sky-200 p-8 rounded-3xl shadow-2xl">
+                    <h2 class="text-xl md:text-3xl font-bold text-gray-900 mb-4 whitespace-normal md:whitespace-nowrap">
+                        অফারটি মিস করতে না চাইলে <br class="block md:hidden"> 
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-orange-600">এখনই অর্ডার করুন!</span>
+                    </h2>
+                    <p class="text-base text-gray-600 mb-6">স্টক সীমিত! অফারটি শেষ হওয়ার আগেই কনফার্ম করুন।</p>
+                    
+                    <div class="flex items-center justify-center gap-6 mb-6">
+                        <div class="text-center">
+                            <p class="text-xs md:text-sm text-gray-500 font-bold uppercase tracking-wider">দুই কেজির প্যাকেজ মূল্য</p>
+                            <p class="text-3xl font-black text-gray-900">৭০০৳</p>
+                        </div>
+                        <div class="h-10 w-px bg-gray-300"></div>
+                        <div class="text-center">
+                            <p class="text-xs md:text-sm text-gray-500 font-bold uppercase tracking-wider">ডেলিভারি</p>
+                            <p class="text-3xl font-black text-sky-600">ক্যাশ অন</p>
+                        </div>
+                    </div>
+                    
+                    <a href="#order-form" class="btn-premium shine-effect w-full md:w-auto text-lg md:text-2xl py-3 md:py-4 px-8 md:px-12 rounded-full inline-flex items-center justify-center gap-3">
+                        <span>অর্ডার কনফার্ম করুন</span>
+                        <i class="fas fa-arrow-right text-white text-sm md:text-base"></i>
+                    </a>
+                    
+                    <p class="mt-4 text-xs text-gray-400">
+                        <i class="fas fa-lock mr-1 text-green-500"></i> ১০০% নিরাপদ চেকআউট
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHECKOUT ANCHOR -->
+        <div id="oder" class="h-1 w-full opacity-0 pointer-events-none"></div>
+
+        <!-- ORDER FORM SECTION -->
+        <section id="order-form" class="py-12 bg-gray-50 border-t border-gray-200 mt-6 scroll-mt-20">
+            <div class="container mx-auto px-4 max-w-6xl">
+                <div class="text-center mb-8">
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-800 border-b-2 border-dashed border-gray-300 inline-block pb-2">
+                        অর্ডার কনফার্ম করতে চাইলে নিচের ফর্ম ফিলাপ করুন
+                    </h2>
+                </div>
+
+                <form id="checkout-form" onsubmit="handleOrderSubmit(event)">
+                    <!-- Hidden Container for Products -->
+                    <div id="dynamic-products-inputs"></div>
+
+                    <!-- Main Checkout Wrapper with Dotted Border -->
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 border-2 border-dashed border-indigo-500 rounded-3xl p-4 lg:p-8 relative bg-white/70 backdrop-blur-sm shadow-xl">
+
+                        <!-- LEFT COLUMN: Inputs -->
+                        <div class="lg:col-span-7 space-y-8">
+
+                            <!-- 1. Product Selection -->
+                            <div class="bg-white p-5 md:p-6 rounded-2xl shadow-lg border border-indigo-100">
+                                <h3 class="text-lg font-bold text-gray-800 mb-4 flex items-center gap-2">
+                                    <span class="bg-indigo-100 text-indigo-700 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">1</span>
+                                    আপনার প্রোডাক্ট চয়েস করুন
+                                </h3>
+
+                                <div class="space-y-3" id="products-list-container">
+                                    <!-- Product 1 -->
+                                    <label class="relative flex items-center p-3 md:p-4 pr-3 border-2 rounded-xl cursor-pointer transition-all duration-300 group product-card border-indigo-600 bg-indigo-50 shadow-md transform scale-[1.01]"
+                                           onclick="selectProductCard(this, 9)">
+                                        <!-- Selected Check Badge -->
+                                        <div class="absolute -top-2 -right-2 bg-indigo-600 text-white w-6 h-6 md:w-7 md:h-7 rounded-full flex items-center justify-center shadow-md transition-transform duration-300 check-badge z-30 scale-100">
+                                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                                        </div>
+
+                                        <input type="checkbox" name="selected_products[]" value="9"
+                                               data-name="(১০ শতাংশের মতো পুকুর); 1×1=2 kg"
+                                               data-price="700.00"
+                                               data-image="images/combo.png"
+                                               checked
+                                               class="hidden peer">
+
+                                        <div class="flex items-center justify-between gap-2 md:gap-3 w-full relative z-10">
+                                            <div class="flex items-center gap-3 min-w-0">
+                                                <div class="h-12 w-12 md:h-14 md:w-14 flex-shrink-0 rounded-lg border border-gray-200 overflow-hidden bg-white p-0.5 shadow-sm">
+                                                    <img src="images/combo.png" 
+                                                         onerror="this.src='https://www.sorkaragrocare.com/public/uploads/media/screenshot-2026-08-03-at-34716-am.png'" 
+                                                         class="h-full w-full object-cover rounded-md group-hover:scale-105 transition-transform duration-300" alt="combo pack">
+                                                </div>
+                                                <div class="min-w-0">
+                                                    <span class="block font-bold text-gray-900 text-xs md:text-sm leading-tight">
+                                                        (১০ শতাংশের মতো পুকুর); 1×1=2 kg
+                                                    </span>
+                                                    <div class="mt-1 flex items-center gap-2">
+                                                        <span class="text-indigo-700 font-extrabold text-xs md:text-sm">৳700</span>
+                                                        <span class="line-through text-gray-400 text-[10px] md:text-xs">৳1,300</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="flex-shrink-0">
+                                                <div class="rb-qty" onclick="event.stopPropagation();">
+                                                    <button type="button" onclick="changeProductQty(this, -1, 9)" class="rb-qty-btn">-</button>
+                                                    <input type="number" id="qty-9" value="1" min="1" max="99" class="rb-qty-input" onchange="handleQtyManual(this, 9)">
+                                                    <button type="button" onclick="changeProductQty(this, 1, 9)" class="rb-qty-btn">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </label>
+
+                                    <!-- Product 2 -->
+                                    <label class="relative flex items-center p-3 md:p-4 pr-3 border-2 rounded-xl cursor-pointer transition-all duration-300 group product-card border-gray-200 bg-white hover:border-indigo-200 hover:shadow-sm"
+                                           onclick="selectProductCard(this, 10)">
+                                        <div class="absolute -top-2 -right-2 bg-indigo-600 text-white w-6 h-6 md:w-7 md:h-7 rounded-full flex items-center justify-center shadow-md transition-transform duration-300 check-badge z-30 scale-0">
+                                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                                        </div>
+
+                                        <input type="checkbox" name="selected_products[]" value="10"
+                                               data-name="(২০ শতাংশের মতো পুকুর); 2×2=4 kg"
+                                               data-price="1400.00"
+                                               data-image="images/combo.png"
+                                               class="hidden peer">
+
+                                        <div class="flex items-center justify-between gap-2 md:gap-3 w-full relative z-10">
+                                            <div class="flex items-center gap-3 min-w-0">
+                                                <div class="h-12 w-12 md:h-14 md:w-14 flex-shrink-0 rounded-lg border border-gray-200 overflow-hidden bg-white p-0.5 shadow-sm">
+                                                    <img src="images/combo.png" 
+                                                         onerror="this.src='https://www.sorkaragrocare.com/public/uploads/media/screenshot-2026-08-03-at-34716-am.png'" 
+                                                         class="h-full w-full object-cover rounded-md group-hover:scale-105 transition-transform duration-300" alt="combo pack">
+                                                </div>
+                                                <div class="min-w-0">
+                                                    <span class="block font-bold text-gray-900 text-xs md:text-sm leading-tight">
+                                                        (২০ শতাংশের মতো পুকুর); 2×2=4 kg
+                                                    </span>
+                                                    <div class="mt-1 flex items-center gap-2">
+                                                        <span class="text-indigo-700 font-extrabold text-xs md:text-sm">৳1,400</span>
+                                                        <span class="line-through text-gray-400 text-[10px] md:text-xs">৳2,600</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="flex-shrink-0">
+                                                <div class="rb-qty" onclick="event.stopPropagation();">
+                                                    <button type="button" onclick="changeProductQty(this, -1, 10)" class="rb-qty-btn">-</button>
+                                                    <input type="number" id="qty-10" value="1" min="1" max="99" class="rb-qty-input" onchange="handleQtyManual(this, 10)">
+                                                    <button type="button" onclick="changeProductQty(this, 1, 10)" class="rb-qty-btn">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </label>
+
+                                    <!-- Product 3 -->
+                                    <label class="relative flex items-center p-3 md:p-4 pr-3 border-2 rounded-xl cursor-pointer transition-all duration-300 group product-card border-gray-200 bg-white hover:border-indigo-200 hover:shadow-sm"
+                                           onclick="selectProductCard(this, 11)">
+                                        <div class="absolute -top-2 -right-2 bg-indigo-600 text-white w-6 h-6 md:w-7 md:h-7 rounded-full flex items-center justify-center shadow-md transition-transform duration-300 check-badge z-30 scale-0">
+                                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                                        </div>
+
+                                        <input type="checkbox" name="selected_products[]" value="11"
+                                               data-name="(৩০ শতাংশের মতো পুকুর); 3×3=6 kg"
+                                               data-price="2100.00"
+                                               data-image="images/combo.png"
+                                               class="hidden peer">
+
+                                        <div class="flex items-center justify-between gap-2 md:gap-3 w-full relative z-10">
+                                            <div class="flex items-center gap-3 min-w-0">
+                                                <div class="h-12 w-12 md:h-14 md:w-14 flex-shrink-0 rounded-lg border border-gray-200 overflow-hidden bg-white p-0.5 shadow-sm">
+                                                    <img src="images/combo.png" 
+                                                         onerror="this.src='https://www.sorkaragrocare.com/public/uploads/media/screenshot-2026-08-03-at-34716-am.png'" 
+                                                         class="h-full w-full object-cover rounded-md group-hover:scale-105 transition-transform duration-300" alt="combo pack">
+                                                </div>
+                                                <div class="min-w-0">
+                                                    <span class="block font-bold text-gray-900 text-xs md:text-sm leading-tight">
+                                                        (৩০ শতাংশের মতো পুকুর); 3×3=6 kg
+                                                    </span>
+                                                    <div class="mt-1 flex items-center gap-2">
+                                                        <span class="text-indigo-700 font-extrabold text-xs md:text-sm">৳2,100</span>
+                                                        <span class="line-through text-gray-400 text-[10px] md:text-xs">৳3,900</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="flex-shrink-0">
+                                                <div class="rb-qty" onclick="event.stopPropagation();">
+                                                    <button type="button" onclick="changeProductQty(this, -1, 11)" class="rb-qty-btn">-</button>
+                                                    <input type="number" id="qty-11" value="1" min="1" max="99" class="rb-qty-input" onchange="handleQtyManual(this, 11)">
+                                                    <button type="button" onclick="changeProductQty(this, 1, 11)" class="rb-qty-btn">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </label>
+
+                                    <!-- Product 4 -->
+                                    <label class="relative flex items-center p-3 md:p-4 pr-3 border-2 rounded-xl cursor-pointer transition-all duration-300 group product-card border-gray-200 bg-white hover:border-indigo-200 hover:shadow-sm"
+                                           onclick="selectProductCard(this, 12)">
+                                        <div class="absolute -top-2 -right-2 bg-indigo-600 text-white w-6 h-6 md:w-7 md:h-7 rounded-full flex items-center justify-center shadow-md transition-transform duration-300 check-badge z-30 scale-0">
+                                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                                        </div>
+
+                                        <input type="checkbox" name="selected_products[]" value="12"
+                                               data-name="(৪০ শতাংশের মতো পুকুর); 4×4=8 kg"
+                                               data-price="2800.00"
+                                               data-image="images/combo.png"
+                                               class="hidden peer">
+
+                                        <div class="flex items-center justify-between gap-2 md:gap-3 w-full relative z-10">
+                                            <div class="flex items-center gap-3 min-w-0">
+                                                <div class="h-12 w-12 md:h-14 md:w-14 flex-shrink-0 rounded-lg border border-gray-200 overflow-hidden bg-white p-0.5 shadow-sm">
+                                                    <img src="images/combo.png" 
+                                                         onerror="this.src='https://www.sorkaragrocare.com/public/uploads/media/screenshot-2026-08-03-at-34716-am.png'" 
+                                                         class="h-full w-full object-cover rounded-md group-hover:scale-105 transition-transform duration-300" alt="combo pack">
+                                                </div>
+                                                <div class="min-w-0">
+                                                    <span class="block font-bold text-gray-900 text-xs md:text-sm leading-tight">
+                                                        (৪০ শতাংশের মতো পুকুর); 4×4=8 kg
+                                                    </span>
+                                                    <div class="mt-1 flex items-center gap-2">
+                                                        <span class="text-indigo-700 font-extrabold text-xs md:text-sm">৳2,800</span>
+                                                        <span class="line-through text-gray-400 text-[10px] md:text-xs">৳5,200</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="flex-shrink-0">
+                                                <div class="rb-qty" onclick="event.stopPropagation();">
+                                                    <button type="button" onclick="changeProductQty(this, -1, 12)" class="rb-qty-btn">-</button>
+                                                    <input type="number" id="qty-12" value="1" min="1" max="99" class="rb-qty-input" onchange="handleQtyManual(this, 12)">
+                                                    <button type="button" onclick="changeProductQty(this, 1, 12)" class="rb-qty-btn">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </label>
+
+                                    <!-- Product 5 -->
+                                    <label class="relative flex items-center p-3 md:p-4 pr-3 border-2 rounded-xl cursor-pointer transition-all duration-300 group product-card border-gray-200 bg-white hover:border-indigo-200 hover:shadow-sm"
+                                           onclick="selectProductCard(this, 13)">
+                                        <div class="absolute -top-2 -right-2 bg-indigo-600 text-white w-6 h-6 md:w-7 md:h-7 rounded-full flex items-center justify-center shadow-md transition-transform duration-300 check-badge z-30 scale-0">
+                                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+                                        </div>
+
+                                        <input type="checkbox" name="selected_products[]" value="13"
+                                               data-name="(৫০ শতাংশের মতো পুকুর); 5×5=10 kg"
+                                               data-price="3500.00"
+                                               data-image="images/combo.png"
+                                               class="hidden peer">
+
+                                        <div class="flex items-center justify-between gap-2 md:gap-3 w-full relative z-10">
+                                            <div class="flex items-center gap-3 min-w-0">
+                                                <div class="h-12 w-12 md:h-14 md:w-14 flex-shrink-0 rounded-lg border border-gray-200 overflow-hidden bg-white p-0.5 shadow-sm">
+                                                    <img src="images/combo.png" 
+                                                         onerror="this.src='https://www.sorkaragrocare.com/public/uploads/media/screenshot-2026-08-03-at-34716-am.png'" 
+                                                         class="h-full w-full object-cover rounded-md group-hover:scale-105 transition-transform duration-300" alt="combo pack">
+                                                </div>
+                                                <div class="min-w-0">
+                                                    <span class="block font-bold text-gray-900 text-xs md:text-sm leading-tight">
+                                                        (৫০ শতাংশের মতো পুকুর); 5×5=10 kg
+                                                    </span>
+                                                    <div class="mt-1 flex items-center gap-2">
+                                                        <span class="text-indigo-700 font-extrabold text-xs md:text-sm">৳3,500</span>
+                                                        <span class="line-through text-gray-400 text-[10px] md:text-xs">৳6,500</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="flex-shrink-0">
+                                                <div class="rb-qty" onclick="event.stopPropagation();">
+                                                    <button type="button" onclick="changeProductQty(this, -1, 13)" class="rb-qty-btn">-</button>
+                                                    <input type="number" id="qty-13" value="1" min="1" max="99" class="rb-qty-input" onchange="handleQtyManual(this, 13)">
+                                                    <button type="button" onclick="changeProductQty(this, 1, 13)" class="rb-qty-btn">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- 2. Billing Details -->
+                            <div class="bg-white p-5 md:p-6 rounded-2xl shadow-lg border border-indigo-100">
+                                <h3 class="text-lg font-bold text-gray-800 mb-6 flex items-center gap-2">
+                                    <span class="bg-indigo-100 text-indigo-700 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">2</span>
+                                    বিলিং ডিটেইলস
+                                </h3>
+
+                                <div class="space-y-4">
+                                    <div>
+                                        <label class="block text-sm font-bold text-gray-700 mb-1">
+                                            আপনার নাম <span class="text-red-500">*</span>
+                                        </label>
+                                        <input type="text" id="billing-name" name="customer_name" required 
+                                               class="w-full rounded-xl p-3 text-sm font-bold placeholder-gray-400" 
+                                               placeholder="সম্পূর্ণ নাম লিখুন">
+                                    </div>
+
+                                    <div>
+                                        <label class="block text-sm font-bold text-gray-700 mb-1">
+                                            মোবাইল নাম্বার <span class="text-red-500">*</span>
+                                        </label>
+                                        <input type="tel" id="billing-phone" name="customer_phone" required 
+                                               class="w-full rounded-xl p-3 text-sm font-bold placeholder-gray-400" 
+                                               placeholder="017xxxxxxxx">
+                                    </div>
+
+                                    <div>
+                                        <label class="block text-sm font-bold text-gray-700 mb-1">
+                                            সম্পূর্ণ ঠিকানা <span class="text-red-500">*</span>
+                                        </label>
+                                        <textarea id="billing-address" name="customer_address" required rows="2" 
+                                                  class="w-full rounded-xl p-3 text-sm font-bold placeholder-gray-400" 
+                                                  placeholder="বাসা নং, রোড নং, এলাকা, থানা, জেলা"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- RIGHT COLUMN: Summary (Sticky) -->
+                        <div class="lg:col-span-5">
+                            <div class="bg-white rounded-2xl shadow-lg border border-indigo-100 overflow-hidden sticky top-24">
+                                <div class="bg-gray-50 px-6 py-4 border-b border-gray-100 flex justify-between items-center">
+                                    <h3 class="text-lg font-bold text-gray-800">আপনার অর্ডার</h3>
+                                    <span class="text-xs bg-indigo-100 text-indigo-700 font-bold px-2 py-0.5 rounded-full">সারা দেশে ডেলিভারি</span>
+                                </div>
+
+                                <div class="p-6 space-y-4">
+                                    <!-- Product Summary Row -->
+                                    <div id="summary-items-container" class="space-y-3">
+                                        <!-- Injected via JavaScript -->
+                                    </div>
+
+                                    <!-- Shipping Selection -->
+                                    <div class="py-4 border-t border-dashed border-gray-200">
+                                        <label class="block text-sm font-bold text-gray-800 mb-2">Delivery Area</label>
+                                        <label class="relative flex items-center justify-between p-3 border rounded-xl cursor-pointer transition-all duration-200 border-indigo-600 bg-indigo-50/50 ring-1 ring-indigo-500">
+                                            <div class="flex items-center gap-3">
+                                                <div class="flex items-center justify-center w-5 h-5 rounded-full border border-indigo-600 bg-indigo-600 transition-colors">
+                                                    <div class="w-2 h-2 rounded-full bg-white"></div>
+                                                </div>
+                                                <input type="radio" name="customer_district" value="all_bd" checked class="hidden">
+                                                <span class="text-sm font-bold text-gray-700">ALL Bangladesh</span>
+                                            </div>
+                                            <span class="font-bold text-indigo-600">৳0</span>
+                                        </label>
+
+                                        <div class="py-4 border-t border-dashed border-gray-200 mt-4">
+                                            <label class="block text-sm font-bold text-gray-800 mb-2">Payment Method</label>
+                                            <label class="relative flex items-center p-3 border border-indigo-600 bg-indigo-50/40 rounded-xl cursor-pointer ring-1 ring-indigo-500">
+                                                <div class="flex items-center gap-3 w-full">
+                                                    <input type="radio" name="payment_method" value="cod" checked class="text-indigo-600 focus:ring-indigo-500 border-gray-300">
+                                                    <span class="text-sm font-bold text-gray-700">Cash On Delivery</span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Price Breakdown -->
+                                    <div class="space-y-2 pt-4 border-t border-gray-100">
+                                        <div class="flex justify-between text-sm text-gray-600">
+                                            <span>Subtotal</span>
+                                            <span class="font-bold text-slate-800" id="summary-subtotal">৳700</span>
+                                        </div>
+                                        <div class="flex justify-between text-sm text-gray-600">
+                                            <span>Delivery Charge</span>
+                                            <span class="font-bold text-green-600" id="summary-shipping">৳0</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex justify-between items-center pt-4 border-t border-gray-200">
+                                        <span class="text-lg font-bold text-gray-800">Total</span>
+                                        <span class="text-2xl font-black text-indigo-600" id="summary-total">৳700</span>
+                                    </div>
+
+                                    <div id="cod-message" class="bg-yellow-50 text-yellow-800 text-xs px-3 py-2.5 rounded-lg border border-yellow-200 text-center font-medium">
+                                        ক্যাশ অন ডেলিভারি (পণ্য হাতে পেয়ে টাকা পরিশোধ করবেন)
+                                    </div>
+
+                                    <button type="submit" id="submit-btn" class="w-full bg-gradient-to-r from-indigo-600 to-indigo-700 hover:from-indigo-700 hover:to-indigo-800 text-white font-bold py-4 px-6 rounded-xl shadow-lg shadow-indigo-500/30 transition-all transform hover:scale-[1.01] flex justify-center items-center gap-3 group relative cursor-pointer">
+                                        <span id="btn-text" class="text-base md:text-lg">অর্ডার কনফার্ম করুন</span>
+                                        <span id="btn-total" class="bg-white/20 px-2.5 py-0.5 rounded-md text-sm font-black group-hover:bg-white/30 transition-colors">৳700</span>
+                                        <span id="btn-loading" class="hidden"><i class="fa-solid fa-spinner animate-spin"></i></span>
+                                    </button>
+
+                                    <div class="flex items-center justify-center gap-2 text-xs text-gray-400 pt-2">
+                                        <i class="fa-solid fa-shield-halved text-green-600"></i>
+                                        <span>দ্রুত ডেলিভারি ও নিরাপদ পেমেন্ট গ্যারান্টি</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="bg-slate-900 text-slate-400 py-10 border-t border-slate-800">
+            <div class="container mx-auto px-4 max-w-6xl text-center">
+                <div class="flex items-center justify-center gap-2 mb-4">
+                    <div class="w-8 h-8 bg-sky-600 text-white rounded-lg flex items-center justify-center">
+                        <i class="fa-solid fa-fish-fins"></i>
+                    </div>
+                    <span class="text-xl font-bold text-white">Sorkar Agro Care</span>
+                </div>
+                <p class="text-sm max-w-md mx-auto mb-4 text-slate-400">
+                    মৎস্য চাষীদের লাভজনক ও টেকসই মাছ চাষের জন্য উন্নত প্রাকৃতিক সমাধান।
+                </p>
+                <p class="text-sm font-medium mb-3">
+                    হটলাইন / হোয়াটসঅ্যাপ: <a href="tel:01708938787" class="text-yellow-400 hover:underline font-bold">01708-938787</a>
+                </p>
+                <div class="text-xs text-slate-500 flex items-center justify-center gap-2">
+                    <span>© 2026 Sorkar Agro Care. সর্বস্বত্ব সংরক্ষিত।</span>
+                    <span>•</span>
+                    <button type="button" onclick="openAdminModal()" class="text-slate-500 hover:text-slate-300 transition text-[11px] underline flex items-center gap-1 cursor-pointer">
+                        <i class="fa-solid fa-lock text-[10px]"></i> অ্যাডমিন প্যানেল
+                    </button>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- MOBILE STICKY FOOTER -->
+    <div id="mobileStickyFooter" class="fixed bottom-0 left-0 w-full bg-white z-[60] transition-transform duration-300 md:hidden shadow-[0_-4px_20px_rgba(0,0,0,0.08)]">
+        <div class="flex items-center justify-between gap-2 px-3 py-2.5" style="padding-bottom: max(10px, env(safe-area-inset-bottom));">
+            <a href="#order-form" class="flex-[3.5] bg-[#ffb429] hover:bg-[#efa620] text-slate-900 font-bold py-3 px-1 rounded-xl text-center text-[15px] shadow-sm transition-colors">
+                অর্ডার করুন
+            </a>
+            <a href="https://wa.me/8801708938787" target="_blank" class="flex-[2.5] bg-[#128c65] hover:bg-[#0e7352] text-white font-bold py-3 px-1 rounded-xl text-center text-[15px] shadow-sm transition-colors flex items-center justify-center gap-1">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="tel:+8801708938787" class="flex-[3] bg-[#ef4444] hover:bg-[#dc2626] text-white rounded-xl flex flex-col items-center justify-center py-[7px] px-1 shadow-sm transition-colors overflow-hidden">
+                <span class="font-bold text-[14px] leading-tight flex items-center gap-1"><i class="fas fa-phone-alt text-xs"></i> Call</span>
+                <span class="text-[8.5px] font-medium text-white/90 leading-none mt-[2px] whitespace-nowrap">+880 1708-938787</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- SALES POPUP (BOTTOM LEFT CORNER) -->
+    <div id="sales-popup" class="fixed bottom-24 md:bottom-8 left-4 z-[999] transition-all duration-500 -translate-x-[calc(100%+2rem)]" style="max-width:300px;">
+        <div class="bg-white rounded-2xl shadow-2xl border border-gray-100 p-3 flex items-center gap-3 relative overflow-hidden">
+            <!-- Left Accent Bar -->
+            <div class="absolute left-0 top-0 bottom-0 w-1.5 bg-green-500 rounded-l-2xl"></div>
+            <!-- Icon -->
+            <div class="ml-1 w-11 h-11 bg-green-50 rounded-xl flex items-center justify-center flex-shrink-0 border border-green-100">
+                <span class="text-2xl">🛒</span>
+            </div>
+            <!-- Text -->
+            <div class="flex-1 min-w-0">
+                <p class="text-xs font-extrabold text-gray-800 leading-snug" id="popup-text">রহিম, ঢাকা থেকে প্যাকেজ অর্ডার করেছেন</p>
+                <div class="flex items-center gap-1 mt-0.5">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                    </span>
+                    <p class="text-[10px] text-green-600 font-semibold">এইমাত্র অর্ডার করেছেন</p>
+                </div>
+            </div>
+            <!-- Close Button -->
+            <button onclick="document.getElementById('sales-popup').classList.add('-translate-x-[calc(100%+2rem)]')" class="flex-shrink-0 w-5 h-5 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-gray-400 text-xs font-bold transition-colors">✕</button>
+        </div>
+    </div>
+
+    <!-- VALIDATION ERROR MODAL -->
+    <div id="validation-modal" class="fixed inset-0 z-[100] hidden overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div class="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
+            <div class="fixed inset-0 transition-opacity bg-gray-900 bg-opacity-75 backdrop-blur-sm" aria-hidden="true" onclick="closeValidationModal()"></div>
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+            <div class="inline-block align-bottom bg-white rounded-3xl px-4 pt-5 pb-4 text-left overflow-hidden shadow-2xl transform transition-all sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6 border-t-8 border-red-500">
+                <div class="absolute top-0 right-0 pt-4 pr-4">
+                    <button type="button" class="text-gray-400 bg-white rounded-md hover:text-gray-500 focus:outline-none" onclick="closeValidationModal()">
+                        <span class="sr-only">Close</span>
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                    </button>
+                </div>
+
+                <div class="sm:flex sm:items-start w-full justify-center">
+                    <div class="mt-3 text-center sm:mt-0 sm:text-center w-full">
+                        <div class="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-red-100 mb-4 animate-bounce">
+                            <svg class="h-8 w-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                            </svg>
+                        </div>
+
+                        <h3 class="text-xl leading-6 font-bold text-gray-900" id="modal-title">
+                            দুঃখিত, একটু ভুল হয়েছে!
+                        </h3>
+
+                        <div class="mt-2">
+                            <p class="text-sm text-gray-600 font-medium whitespace-pre-line" id="modal-message">
+                                অনুগ্রহ করে সব প্রয়োজনীয় তথ্য সঠিকভাবে পূরণ করুন।
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-5 sm:mt-6 space-y-3">
+                    <button type="button" class="w-full inline-flex justify-center rounded-xl border border-transparent shadow-sm px-4 py-3 bg-red-600 text-base font-bold text-white hover:bg-red-700 focus:outline-none sm:text-sm cursor-pointer" onclick="closeValidationModal()">
+                        ঠিক আছে, আমি দেখছি
+                    </button>
+
+                    <div class="grid grid-cols-2 gap-3">
+                        <a href="https://wa.me/8801708938787" target="_blank" class="flex items-center justify-center w-full px-4 py-3 text-sm font-bold text-white bg-[#25D366] rounded-xl shadow-sm hover:bg-[#1ebc57] transition">
+                            <i class="fab fa-whatsapp mr-1.5 text-base"></i> WhatsApp
+                        </a>
+
+                        <a href="tel:01708938787" class="flex items-center justify-center w-full px-4 py-3 text-sm font-bold text-white bg-indigo-600 rounded-xl shadow-sm hover:bg-indigo-700 transition">
+                            <i class="fas fa-phone-alt mr-1.5 text-xs"></i> Call
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ORDER SUCCESS CONFIRMATION MODAL -->
+    <div id="order-success-modal" class="fixed inset-0 z-[110] hidden overflow-y-auto" role="dialog" aria-modal="true">
+        <div class="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
+            <div class="fixed inset-0 bg-gray-900/80 backdrop-blur-md transition-opacity" onclick="closeSuccessModal()"></div>
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+            <div class="inline-block align-bottom bg-white rounded-3xl px-6 pt-6 pb-6 text-center overflow-hidden shadow-2xl transform transition-all sm:my-8 sm:align-middle sm:max-w-md sm:w-full border-t-8 border-green-500">
+                <div class="mx-auto flex items-center justify-center h-20 w-20 rounded-full bg-green-100 mb-4 animate-pulse">
+                    <i class="fa-solid fa-circle-check text-4xl text-green-600"></i>
+                </div>
+                
+                <h3 class="text-2xl font-black text-gray-900 mb-1">
+                    অভিনন্দন! আপনার অর্ডারটি গ্রহণ করা হয়েছে
+                </h3>
+                <p class="text-sm text-gray-500 mb-4">
+                    আমাদের কাস্টমার কেয়ার প্রতিনিধি শীঘ্রই আপনার সাথে যোগাযোগ করবেন।
+                </p>
+
+                <!-- Order Receipt Card -->
+                <div class="bg-gray-50 rounded-2xl p-4 text-left space-y-2 border border-gray-200 mb-6 text-sm">
+                    <div class="flex justify-between border-b pb-2 border-gray-200 font-bold">
+                        <span class="text-gray-600">অর্ডার নম্বর:</span>
+                        <span class="text-indigo-600" id="success-order-id">#SAC-8742</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">গ্রাহকের নাম:</span>
+                        <span class="font-bold text-gray-800" id="success-name">-</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">মোবাইল নম্বর:</span>
+                        <span class="font-bold text-gray-800" id="success-phone">-</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-600">পণ্য:</span>
+                        <span class="font-bold text-gray-800 text-right" id="success-product">-</span>
+                    </div>
+                    <div class="flex justify-between border-t pt-2 border-gray-200 font-black text-base">
+                        <span class="text-gray-800">সর্বমোট মূল্য:</span>
+                        <span class="text-green-600" id="success-total">৳0</span>
+                    </div>
+                    <div class="text-xs text-center text-gray-500 pt-1 font-medium">
+                        পেমেন্ট পদ্ধতি: ক্যাশ অন ডেলিভারি
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="space-y-3">
+                    <a id="success-whatsapp-btn" href="#" target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-3.5 px-4 rounded-xl shadow-lg transition">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                        <span>WhatsApp-এ বিস্তারিত পাঠান</span>
+                    </a>
+                    <button type="button" onclick="closeSuccessModal()" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-3 px-4 rounded-xl shadow transition">
+                        ঠিক আছে
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ADMIN LOGIN MODAL -->
+    <div id="admin-login-modal" class="fixed inset-0 z-[120] hidden overflow-y-auto" role="dialog" aria-modal="true">
+        <div class="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
+            <div class="fixed inset-0 bg-gray-900/80 backdrop-blur-sm transition-opacity" onclick="closeAdminLoginModal()"></div>
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+            <div class="inline-block align-bottom bg-white rounded-3xl p-6 text-center overflow-hidden shadow-2xl transform transition-all sm:my-8 sm:align-middle sm:max-w-sm sm:w-full border-t-8 border-indigo-600">
+                <div class="w-14 h-14 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-3 shadow-inner">
+                    <i class="fa-solid fa-user-shield text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-black text-gray-900 mb-1">অ্যাডমিন লগইন</h3>
+                <p class="text-xs text-gray-500 mb-4">অর্ডার লিস্ট ও সেটিংস দেখতে পিন কোড দিন (ডিফল্ট: 8787)</p>
+                <div class="space-y-3">
+                    <input type="password" id="admin-pin-input" placeholder="পিন কোড লিখুন" maxlength="8" class="text-center text-xl font-bold tracking-widest w-full rounded-xl border border-gray-300 p-3 focus:ring-2 focus:ring-indigo-500">
+                    <p id="admin-pin-error" class="text-xs text-red-500 hidden font-bold">ভুল পিন কোড! পুনরায় চেষ্টা করুন।</p>
+                    <button type="button" onclick="verifyAdminPin()" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 rounded-xl shadow-lg transition">
+                        লগইন করুন
+                    </button>
+                    <button type="button" onclick="closeAdminLoginModal()" class="w-full text-xs text-gray-400 hover:text-gray-600 py-1">
+                        বাতিল
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ADMIN DASHBOARD MODAL -->
+    <div id="admin-dashboard-modal" class="fixed inset-0 z-[125] hidden overflow-y-auto" role="dialog" aria-modal="true">
+        <div class="flex items-center justify-center min-h-screen px-2 sm:px-4 pt-4 pb-20 text-center sm:block sm:p-0">
+            <div class="fixed inset-0 bg-gray-900/85 backdrop-blur-md transition-opacity" onclick="closeAdminDashboard()"></div>
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+            <div class="inline-block align-bottom bg-white rounded-3xl text-left overflow-hidden shadow-2xl transform transition-all sm:my-8 sm:align-middle sm:max-w-5xl sm:w-full border border-gray-100 flex flex-col max-h-[90vh]">
+                
+                <!-- Admin Header -->
+                <div class="bg-slate-900 text-white p-4 sm:p-6 flex items-center justify-between border-b border-slate-800">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center text-white font-bold">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg sm:text-xl font-black">অর্ডার ম্যানেজমেন্ট প্যানেল</h3>
+                            <p class="text-xs text-slate-400">সরকার এগ্রো কেয়ার - লাইভ অর্ডার মনিটরিং</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <button type="button" onclick="exportOrdersToCSV()" class="bg-green-600 hover:bg-green-700 text-white text-xs sm:text-sm font-bold px-3 py-2 rounded-xl shadow flex items-center gap-1.5 transition">
+                            <i class="fa-solid fa-file-excel"></i>
+                            <span class="hidden sm:inline">Excel/CSV ডাউনলোড</span>
+                        </button>
+                        <button type="button" onclick="closeAdminDashboard()" class="text-gray-400 hover:text-white p-2">
+                            <i class="fa-solid fa-xmark text-xl"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Admin Stats & Controls -->
+                <div class="p-4 sm:p-6 bg-slate-50 border-b border-gray-200 overflow-y-auto">
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-4">
+                        <div class="bg-white p-4 rounded-2xl border border-gray-200 shadow-sm">
+                            <span class="text-xs text-gray-500 font-bold">মোট অর্ডার</span>
+                            <p class="text-2xl font-black text-indigo-600" id="admin-total-orders">0</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-2xl border border-gray-200 shadow-sm">
+                            <span class="text-xs text-gray-500 font-bold">মোট বিক্রয়</span>
+                            <p class="text-2xl font-black text-green-600" id="admin-total-sales">৳0</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-2xl border border-gray-200 shadow-sm">
+                            <span class="text-xs text-gray-500 font-bold">আজকের অর্ডার</span>
+                            <p class="text-2xl font-black text-orange-600" id="admin-today-orders">0</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-2xl border border-gray-200 shadow-sm">
+                            <span class="text-xs text-gray-500 font-bold">অর্ডার নোটিফিকেশন</span>
+                            <button onclick="toggleAdminSettings()" class="text-xs text-indigo-600 font-bold underline block mt-1">
+                                ⚙️ সেটিংস ও ইমেইল
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Settings Drawer -->
+                    <div id="admin-settings-box" class="hidden bg-white p-4 rounded-2xl border border-indigo-100 shadow-sm mb-4 space-y-3">
+                        <h4 class="font-bold text-sm text-gray-800 flex items-center gap-2">
+                            <i class="fa-solid fa-bell text-indigo-600"></i> অটোমেটিক অর্ডার নোটিফিকেশন সেটিংস
+                        </h4>
+                        <p class="text-xs text-gray-500">
+                            ওয়েবসাইট থেকে প্রতিটি অর্ডার সরাসরি আপনার ইমেইলে পেতে Web3Forms Access Key অথবা Webhook URL যোগ করুন।
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <div>
+                                <label class="block text-xs font-bold text-gray-700 mb-1">Web3Forms Access Key (ফ্রি ইমেইল নোটিফিকেশন)</label>
+                                <input type="text" id="admin-web3forms-key" placeholder="যেমনঃ 12345-abc-6789" class="w-full text-xs p-2.5 rounded-lg border border-gray-300">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-gray-700 mb-1">অ্যাডমিন পিন পরিবর্তন (PIN)</label>
+                                <input type="password" id="admin-new-pin" placeholder="নতুন পিন (ডিফল্ট: 8787)" class="w-full text-xs p-2.5 rounded-lg border border-gray-300">
+                            </div>
+                        </div>
+                        <div class="flex justify-end gap-2 pt-2">
+                            <button type="button" onclick="saveAdminSettings()" class="bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold px-4 py-2 rounded-lg">
+                                সংরক্ষণ করুন
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Search Input -->
+                    <div class="flex items-center gap-2">
+                        <div class="relative flex-1">
+                            <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-sm"></i>
+                            <input type="text" id="admin-search-input" oninput="renderAdminOrders()" placeholder="গ্রাহকের নাম, মোবাইল নম্বর বা অর্ডার আইডি দিয়ে খুঁজুন..." class="w-full pl-9 pr-4 py-2 text-xs sm:text-sm rounded-xl border border-gray-300 bg-white">
+                        </div>
+                        <button type="button" onclick="clearAllOrders()" class="bg-red-50 hover:bg-red-100 text-red-600 text-xs font-bold px-3 py-2 rounded-xl border border-red-200 transition">
+                            ডাটা ক্লিয়ার
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Orders List -->
+                <div class="flex-1 overflow-y-auto p-4 sm:p-6" style="max-height: 50vh;">
+                    <div id="admin-orders-container">
+                        <!-- Populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // 1. PRODUCT STATE
+        const productsCatalog = {
+            9:  { name: "(১০ শতাংশের মতো পুকুর); 1×1=2 kg", price: 700,  image: "images/combo.png" },
+            10: { name: "(২০ শতাংশের মতো পুকুর); 2×2=4 kg", price: 1400, image: "images/combo.png" },
+            11: { name: "(৩০ শতাংশের মতো পুকুর); 3×3=6 kg", price: 2100, image: "images/combo.png" },
+            12: { name: "(৪০ শতাংশের মতো পুকুর); 4×4=8 kg", price: 2800, image: "images/combo.png" },
+            13: { name: "(৫০ শতাংশের মতো পুকুর); 5×5=10 kg", price: 3500, image: "images/combo.png" }
+        };
+
+        let selectedProductId = 9;
+        let productQuantities = { 9: 1, 10: 1, 11: 1, 12: 1, 13: 1 };
+        const shippingCharge = 0; // Free delivery / ৳0 as configured
+
+        // 2. PRODUCT SELECTION
+        function selectProductCard(labelEl, pId) {
+            selectedProductId = pId;
+            
+            document.querySelectorAll('.product-card').forEach(card => {
+                const input = card.querySelector('input[type="checkbox"]');
+                const badge = card.querySelector('.check-badge');
+                
+                if (parseInt(input.value) === pId) {
+                    input.checked = true;
+                    card.classList.remove('border-gray-200', 'bg-white');
+                    card.classList.add('border-indigo-600', 'bg-indigo-50', 'shadow-md', 'transform', 'scale-[1.01]');
+                    if (badge) {
+                        badge.classList.remove('scale-0');
+                        badge.classList.add('scale-100');
+                    }
+                } else {
+                    input.checked = false;
+                    card.classList.remove('border-indigo-600', 'bg-indigo-50', 'shadow-md', 'transform', 'scale-[1.01]');
+                    card.classList.add('border-gray-200', 'bg-white');
+                    if (badge) {
+                        badge.classList.remove('scale-100');
+                        badge.classList.add('scale-0');
+                    }
+                }
+            });
+
+            recalculateSummary();
+        }
+
+        // 3. QUANTITY CONTROLS
+        function changeProductQty(btn, change, pId) {
+            const input = document.getElementById('qty-' + pId);
+            if (!input) return;
+
+            let cur = parseInt(input.value) || 1;
+            let next = cur + change;
+            if (next < 1) next = 1;
+            if (next > 99) next = 99;
+            input.value = next;
+            productQuantities[pId] = next;
+
+            const card = input.closest('.product-card');
+            if (selectedProductId !== pId && card) {
+                selectProductCard(card, pId);
+            } else {
+                recalculateSummary();
+            }
+        }
+
+        function handleQtyManual(input, pId) {
+            let val = parseInt(input.value);
+            if (isNaN(val) || val < 1) val = 1;
+            if (val > 99) val = 99;
+            input.value = val;
+            productQuantities[pId] = val;
+            recalculateSummary();
+        }
+
+        // 4. RECALCULATE SUMMARY
+        function recalculateSummary() {
+            const container = document.getElementById('summary-items-container');
+            const subtotalEl = document.getElementById('summary-subtotal');
+            const totalEl = document.getElementById('summary-total');
+            const btnTotalEl = document.getElementById('btn-total');
+            const dynamicInputs = document.getElementById('dynamic-products-inputs');
+
+            const item = productsCatalog[selectedProductId];
+            const qty = productQuantities[selectedProductId] || 1;
+            const subtotal = item.price * qty;
+            const grandTotal = subtotal + shippingCharge;
+
+            if (container) {
+                container.innerHTML = `
+                    <div class="flex gap-3 items-center border-b border-gray-100 pb-3">
+                        <div class="w-14 h-14 bg-gray-100 rounded-xl overflow-hidden border border-gray-200 flex-shrink-0 p-0.5">
+                            <img src="${item.image}" onerror="this.src='https://www.sorkaragrocare.com/public/uploads/media/screenshot-2026-08-03-at-34716-am.png'" class="w-full h-full object-cover rounded-lg">
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <p class="font-bold text-gray-900 text-xs md:text-sm leading-snug line-clamp-2">${item.name}</p>
+                            <div class="flex items-center gap-2 mt-1">
+                                <span class="text-xs font-bold text-gray-500 bg-gray-100 px-2 py-0.5 rounded">Qty: ${qty}</span>
+                                <span class="font-extrabold text-indigo-600 text-sm">৳${subtotal}</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+
+            if (dynamicInputs) {
+                dynamicInputs.innerHTML = `
+                    <input type="hidden" name="product_id" value="${selectedProductId}">
+                    <input type="hidden" name="product_name" value="${item.name}">
+                    <input type="hidden" name="quantity" value="${qty}">
+                    <input type="hidden" name="price" value="${item.price}">
+                    <input type="hidden" name="total_amount" value="${grandTotal}">
+                `;
+            }
+
+            if (subtotalEl) subtotalEl.innerText = '৳' + subtotal;
+            if (totalEl) totalEl.innerText = '৳' + grandTotal;
+            if (btnTotalEl) btnTotalEl.innerText = '৳' + grandTotal;
+        }
+
+        // 5. PURPLE COUNTDOWN TIMER
+        (function() {
+            var duration = 1800; // 30 minutes
+            var storageKey = 'sorkar_timer_time';
+            var storageTsKey = 'sorkar_timer_ts';
+            
+            var storedTime = localStorage.getItem(storageKey);
+            var storedAt = localStorage.getItem(storageTsKey);
+            var timer = duration;
+
+            if (storedTime && storedAt) {
+                var elapsed = Math.floor((Date.now() - parseInt(storedAt, 10)) / 1000);
+                if (elapsed < 14400 && elapsed >= 0) {
+                    var remaining = parseInt(storedTime, 10) - elapsed;
+                    timer = remaining > 0 ? remaining : duration;
+                }
+            }
+
+            var hoursEl = document.getElementById('timer-hours');
+            var minEl = document.getElementById('timer-minutes');
+            var secEl = document.getElementById('timer-seconds');
+
+            setInterval(function() {
+                var h = Math.floor(timer / 3600);
+                var m = Math.floor((timer % 3600) / 60);
+                var s = Math.floor(timer % 60);
+
+                if (hoursEl) hoursEl.textContent = (h < 10 ? '0' : '') + h;
+                if (minEl) minEl.textContent = (m < 10 ? '0' : '') + m;
+                if (secEl) secEl.textContent = (s < 10 ? '0' : '') + s;
+
+                localStorage.setItem(storageKey, timer);
+                localStorage.setItem(storageTsKey, Date.now());
+
+                if (--timer < 0) {
+                    timer = duration;
+                }
+            }, 1000);
+        })();
+
+        // 6. HERO SLIDE CAROUSEL
+        function nextHeroSlideManual() {
+            const img = document.getElementById('heroSlideImg');
+            if (!img) return;
+            img.style.opacity = '0.5';
+            setTimeout(() => {
+                img.style.opacity = '1';
+            }, 200);
+        }
+        function prevHeroSlide() {
+            nextHeroSlideManual();
+        }
+
+        // 7. FAKE SALES POPUP
+        const customers = ["রহিম", "করিম", "কামাল", "সুমন", "মোবারক", "বুলবুল", "নাসির", "আব্দুল্লাহ", "আজিজুল", "জুয়েল"];
+        const districts = ["ময়মনসিংহ", "যশোর", "বগুড়া", "রাজশাহী", "নাটোর", "খুলনা", "সিলেট", "কুমিল্লা", "রংপুর", "দিনাজপুর", "ঢাকা"];
+        
+        function showSalesPopup() {
+            const popup = document.getElementById('sales-popup');
+            const textEl = document.getElementById('popup-text');
+            if (!popup || !textEl) return;
+
+            const name = customers[Math.floor(Math.random() * customers.length)];
+            const dist = districts[Math.floor(Math.random() * districts.length)];
+            const p = productsCatalog[selectedProductId] || productsCatalog[9];
+
+            textEl.innerText = `${name}, ${dist} থেকে ${p.name} অর্ডার করেছেন`;
+            popup.classList.remove('-translate-x-[calc(100%+2rem)]');
+
+            setTimeout(() => {
+                popup.classList.add('-translate-x-[calc(100%+2rem)]');
+            }, 4500);
+        }
+
+        setInterval(() => {
+            showSalesPopup();
+        }, 14000);
+        setTimeout(showSalesPopup, 4000);
+
+        // 8. MOBILE STICKY FOOTER VISIBILITY
+        document.addEventListener('DOMContentLoaded', function() {
+            recalculateSummary();
+
+            const footer = document.getElementById('mobileStickyFooter');
+            const orderForm = document.getElementById('order-form');
+            if (footer && orderForm) {
+                window.addEventListener('scroll', () => {
+                    const rect = orderForm.getBoundingClientRect();
+                    if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+                        footer.classList.add('translate-y-full');
+                    } else {
+                        footer.classList.remove('translate-y-full');
+                    }
+                });
+            }
+
+            // Keyboard shortcut for admin: Ctrl + Shift + A
+            document.addEventListener('keydown', function(e) {
+                if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'a') {
+                    openAdminModal();
+                }
+            });
+        });
+
+        // 9. FORM VALIDATION & SUBMISSION
+        function showValidationModal(msg) {
+            const modal = document.getElementById('validation-modal');
+            const msgEl = document.getElementById('modal-message');
+            if (modal && msgEl) {
+                msgEl.innerText = msg;
+                modal.classList.remove('hidden');
+            }
+        }
+        function closeValidationModal() {
+            const modal = document.getElementById('validation-modal');
+            if (modal) modal.classList.add('hidden');
+        }
+
+        function closeSuccessModal() {
+            const modal = document.getElementById('order-success-modal');
+            if (modal) modal.classList.add('hidden');
+        }
+
+        function handleOrderSubmit(e) {
+            e.preventDefault();
+
+            const nameInput = document.getElementById('billing-name');
+            const phoneInput = document.getElementById('billing-phone');
+            const addressInput = document.getElementById('billing-address');
+
+            const name = nameInput.value.trim();
+            const phone = phoneInput.value.trim();
+            const address = addressInput.value.trim();
+
+            if (!name) {
+                showValidationModal("অনুগ্রহ করে আপনার সম্পূর্ণ নাম লিখুন।");
+                nameInput.focus();
+                return false;
+            }
+
+            const bdPhoneRegex = /^(?:\+88|88)?(01[3-9]\d{8})$/;
+            if (!bdPhoneRegex.test(phone.replace(/\s+/g, ''))) {
+                showValidationModal("অনুগ্রহ করে সঠিক ১১ ডিজিটের বাংলাদেশী মোবাইল নম্বর দিন (যেমনঃ 01708-938787)।");
+                phoneInput.focus();
+                return false;
+            }
+
+            if (!address || address.length < 5) {
+                showValidationModal("অনুগ্রহ করে আপনার সম্পূর্ণ ঠিকানা লিখুন (বাসা নং, রোড, থানা, জেলা)।");
+                addressInput.focus();
+                return false;
+            }
+
+            // Show loading state
+            const btn = document.getElementById('submit-btn');
+            const btnText = document.getElementById('btn-text');
+            const btnLoading = document.getElementById('btn-loading');
+            
+            btn.setAttribute('disabled', 'disabled');
+            btnText.innerText = "অর্ডার প্রসেস হচ্ছে...";
+            btnLoading.classList.remove('hidden');
+
+            const orderId = 'SAC-' + Math.floor(1000 + Math.random() * 9000);
+            const item = productsCatalog[selectedProductId];
+            const qty = productQuantities[selectedProductId] || 1;
+            const total = (item.price * qty) + shippingCharge;
+            const now = new Date();
+            const orderDateStr = now.toLocaleDateString('bn-BD') + ' ' + now.toLocaleTimeString('bn-BD', { hour: '2-digit', minute: '2-digit' });
+
+            // 💾 1. Save to Merchant Orders Database (localStorage)
+            const orderRecord = {
+                id: orderId,
+                date: orderDateStr,
+                isoDate: now.toISOString(),
+                name: name,
+                phone: phone,
+                address: address,
+                product: item.name,
+                productId: selectedProductId,
+                quantity: qty,
+                price: item.price,
+                total: total,
+                status: 'নতুন (Pending)',
+                payment: 'Cash On Delivery'
+            };
+
+            try {
+                let existingOrders = JSON.parse(localStorage.getItem('sorkar_orders') || '[]');
+                existingOrders.unshift(orderRecord);
+                localStorage.setItem('sorkar_orders', JSON.stringify(existingOrders));
+            } catch(err) {
+                console.error("Order save error:", err);
+            }
+
+            // 📧 2. Send via Web3Forms if Key is configured
+            const web3Key = localStorage.getItem('sorkar_web3forms_key');
+            if (web3Key) {
+                fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        access_key: web3Key,
+                        subject: `নতুন অর্ডার #${orderId} - ${name} (${phone})`,
+                        order_id: orderId,
+                        customer_name: name,
+                        customer_phone: phone,
+                        customer_address: address,
+                        product: `${item.name} (${qty} টি)`,
+                        total_amount: `৳${total}`,
+                        payment_method: 'Cash On Delivery'
+                    })
+                }).catch(e => console.log('Notification sent background'));
+            }
+
+            setTimeout(() => {
+                btn.removeAttribute('disabled');
+                btnText.innerText = "অর্ডার কনফার্ম করুন";
+                btnLoading.classList.add('hidden');
+
+                // Fill order success modal
+                document.getElementById('success-order-id').innerText = '#' + orderId;
+                document.getElementById('success-name').innerText = name;
+                document.getElementById('success-phone').innerText = phone;
+                document.getElementById('success-product').innerText = `${item.name} (${qty} টি)`;
+                document.getElementById('success-total').innerText = '৳' + total;
+
+                // WhatsApp message link
+                const waMessage = encodeURIComponent(
+                    `নতুন অর্ডার গ্রহণ!\nঅর্ডার আইডি: #${orderId}\nতারিখ: ${orderDateStr}\nগ্রাহকের নাম: ${name}\nফোন: ${phone}\nঠিকানা: ${address}\nপণ্য: ${item.name} (${qty} টি)\nমোট মূল্য: ৳${total}\nপেমেন্ট: ক্যাশ অন ডেলিভারি`
+                );
+                document.getElementById('success-whatsapp-btn').href = `https://wa.me/8801708938787?text=${waMessage}`;
+
+                // Show Success Modal
+                document.getElementById('order-success-modal').classList.remove('hidden');
+
+                // Reset form
+                nameInput.value = '';
+                phoneInput.value = '';
+                addressInput.value = '';
+            }, 800);
+
+            return false;
+        }
+
+        // ==========================================
+        // 🔒 10. MERCHANT ADMIN DASHBOARD LOGIC
+        // ==========================================
+        function openAdminModal() {
+            const isAuth = sessionStorage.getItem('sorkar_admin_auth');
+            if (isAuth === 'true') {
+                showAdminDashboard();
+            } else {
+                document.getElementById('admin-login-modal').classList.remove('hidden');
+                document.getElementById('admin-pin-input').value = '';
+                document.getElementById('admin-pin-error').classList.add('hidden');
+                setTimeout(() => document.getElementById('admin-pin-input').focus(), 150);
+            }
+        }
+
+        function closeAdminLoginModal() {
+            document.getElementById('admin-login-modal').classList.add('hidden');
+        }
+
+        function verifyAdminPin() {
+            const input = document.getElementById('admin-pin-input').value.trim();
+            const storedPin = localStorage.getItem('sorkar_admin_pin') || '8787';
+
+            if (input === storedPin) {
+                sessionStorage.setItem('sorkar_admin_auth', 'true');
+                closeAdminLoginModal();
+                showAdminDashboard();
+            } else {
+                document.getElementById('admin-pin-error').classList.remove('hidden');
+            }
+        }
+
+        function showAdminDashboard() {
+            document.getElementById('admin-dashboard-modal').classList.remove('hidden');
+            
+            // Fill settings fields
+            const savedKey = localStorage.getItem('sorkar_web3forms_key') || '';
+            document.getElementById('admin-web3forms-key').value = savedKey;
+
+            renderAdminOrders();
+        }
+
+        function closeAdminDashboard() {
+            document.getElementById('admin-dashboard-modal').classList.add('hidden');
+        }
+
+        function toggleAdminSettings() {
+            const box = document.getElementById('admin-settings-box');
+            box.classList.toggle('hidden');
+        }
+
+        function saveAdminSettings() {
+            const key = document.getElementById('admin-web3forms-key').value.trim();
+            const newPin = document.getElementById('admin-new-pin').value.trim();
+
+            if (key) localStorage.setItem('sorkar_web3forms_key', key);
+            if (newPin && newPin.length >= 4) {
+                localStorage.setItem('sorkar_admin_pin', newPin);
+                alert("পিন ও সেটিংস সফলভাবে সংরক্ষিত হয়েছে!");
+            } else {
+                alert("সেটিংস সংরক্ষিত হয়েছে!");
+            }
+            toggleAdminSettings();
+        }
+
+        function renderAdminOrders() {
+            const container = document.getElementById('admin-orders-container');
+            const searchVal = (document.getElementById('admin-search-input')?.value || '').toLowerCase().trim();
+            const orders = JSON.parse(localStorage.getItem('sorkar_orders') || '[]');
+
+            // Stats
+            const totalOrders = orders.length;
+            const totalSales = orders.reduce((sum, o) => sum + (parseFloat(o.total) || 0), 0);
+            const todayStr = new Date().toISOString().split('T')[0];
+            const todayOrders = orders.filter(o => o.isoDate && o.isoDate.startsWith(todayStr)).length;
+
+            document.getElementById('admin-total-orders').innerText = totalOrders;
+            document.getElementById('admin-total-sales').innerText = '৳' + totalSales;
+            document.getElementById('admin-today-orders').innerText = todayOrders;
+
+            // Filter
+            const filtered = orders.filter(o => {
+                if (!searchVal) return true;
+                return (o.id && o.id.toLowerCase().includes(searchVal)) ||
+                       (o.name && o.name.toLowerCase().includes(searchVal)) ||
+                       (o.phone && o.phone.includes(searchVal)) ||
+                       (o.address && o.address.toLowerCase().includes(searchVal));
+            });
+
+            if (filtered.length === 0) {
+                container.innerHTML = `
+                    <div class="text-center py-12 text-gray-400">
+                        <i class="fa-solid fa-box-open text-5xl mb-3 text-gray-300"></i>
+                        <p class="font-bold text-gray-600">কোনো অর্ডার পাওয়া যায়নি</p>
+                        <p class="text-xs mt-1">ওয়েবসাইটে নতুন অর্ডার করা হলে এখানে অটোমেটিক দেখা যাবে।</p>
+                    </div>
+                `;
+                return;
+            }
+
+            let html = `
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left text-xs sm:text-sm border-collapse">
+                        <thead>
+                            <tr class="bg-gray-100 text-gray-600 uppercase font-bold text-[11px] border-b">
+                                <th class="p-3">অর্ডার আইডি</th>
+                                <th class="p-3">তারিখ</th>
+                                <th class="p-3">গ্রাহক ও ফোন</th>
+                                <th class="p-3">ঠিকানা</th>
+                                <th class="p-3">পণ্য ও পরিমাণ</th>
+                                <th class="p-3">মূল্য</th>
+                                <th class="p-3">অবস্থা</th>
+                                <th class="p-3 text-right">অ্যাকশন</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100 font-medium">
+            `;
+
+            filtered.forEach((o, idx) => {
+                const statusColor = o.status.includes('Confirmed') ? 'bg-blue-100 text-blue-700' :
+                                    o.status.includes('Shipped') ? 'bg-purple-100 text-purple-700' :
+                                    o.status.includes('Delivered') ? 'bg-green-100 text-green-700' :
+                                    'bg-yellow-100 text-yellow-800';
+
+                html += `
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="p-3 font-bold text-indigo-600">${o.id}</td>
+                        <td class="p-3 text-gray-500 whitespace-nowrap text-xs">${o.date}</td>
+                        <td class="p-3">
+                            <span class="font-bold text-gray-900 block">${o.name}</span>
+                            <span class="text-xs text-gray-600">${o.phone}</span>
+                        </td>
+                        <td class="p-3 text-gray-600 max-w-xs break-words text-xs">${o.address}</td>
+                        <td class="p-3 text-gray-800">${o.product} <span class="text-indigo-600 font-bold">(${o.quantity}টি)</span></td>
+                        <td class="p-3 font-extrabold text-green-600">৳${o.total}</td>
+                        <td class="p-3">
+                            <select onchange="updateOrderStatus('${o.id}', this.value)" class="text-xs font-bold rounded-lg border border-gray-200 py-1 px-2 ${statusColor}">
+                                <option value="নতুন (Pending)" ${o.status.includes('Pending') ? 'selected' : ''}>নতুন (Pending)</option>
+                                <option value="কনফার্মড (Confirmed)" ${o.status.includes('Confirmed') ? 'selected' : ''}>কনফার্মড</option>
+                                <option value="পাঠানো হয়েছে (Shipped)" ${o.status.includes('Shipped') ? 'selected' : ''}>কুরিয়ারে পাঠানো</option>
+                                <option value="ডেলিভার্ড (Delivered)" ${o.status.includes('Delivered') ? 'selected' : ''}>ডেলিভার্ড</option>
+                                <option value="বাতিল (Cancelled)" ${o.status.includes('Cancelled') ? 'selected' : ''}>বাতিল</option>
+                            </select>
+                        </td>
+                        <td class="p-3 text-right">
+                            <div class="flex items-center justify-end gap-1.5">
+                                <a href="tel:${o.phone}" title="সরাসরি কল করুন" class="w-7 h-7 bg-slate-100 hover:bg-green-600 hover:text-white rounded-lg flex items-center justify-center text-slate-700 transition">
+                                    <i class="fas fa-phone-alt text-xs"></i>
+                                </a>
+                                <a href="https://wa.me/88${o.phone.replace(/[^0-9]/g, '')}" target="_blank" title="WhatsApp মেসেজ" class="w-7 h-7 bg-slate-100 hover:bg-[#25D366] hover:text-white rounded-lg flex items-center justify-center text-slate-700 transition">
+                                    <i class="fab fa-whatsapp text-xs"></i>
+                                </a>
+                                <button onclick="deleteOrder('${o.id}')" title="ডিলিট করুন" class="w-7 h-7 bg-slate-100 hover:bg-red-600 hover:text-white rounded-lg flex items-center justify-center text-slate-700 transition">
+                                    <i class="fa-solid fa-trash text-xs"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                `;
+            });
+
+            html += `</tbody></table></div>`;
+            container.innerHTML = html;
+        }
+
+        function updateOrderStatus(orderId, newStatus) {
+            let orders = JSON.parse(localStorage.getItem('sorkar_orders') || '[]');
+            const idx = orders.findIndex(o => o.id === orderId);
+            if (idx !== -1) {
+                orders[idx].status = newStatus;
+                localStorage.setItem('sorkar_orders', JSON.stringify(orders));
+                renderAdminOrders();
+            }
+        }
+
+        function deleteOrder(orderId) {
+            if (!confirm(`আপনি কি সত্যিই #${orderId} অর্ডারটি মুছে ফেলতে চান?`)) return;
+            let orders = JSON.parse(localStorage.getItem('sorkar_orders') || '[]');
+            orders = orders.filter(o => o.id !== orderId);
+            localStorage.setItem('sorkar_orders', JSON.stringify(orders));
+            renderAdminOrders();
+        }
+
+        function clearAllOrders() {
+            if (!confirm("সতর্কতা: আপনি কি নিশ্চিত সব অর্ডার ডিলিট করতে চান? এটি রিভার্স করা যাবে না।")) return;
+            localStorage.removeItem('sorkar_orders');
+            renderAdminOrders();
+        }
+
+        // Export Orders to CSV (Steadfast / Pathao courier compatible)
+        function exportOrdersToCSV() {
+            const orders = JSON.parse(localStorage.getItem('sorkar_orders') || '[]');
+            if (orders.length === 0) {
+                alert("কোনো অর্ডার নেই এক্সপোর্ট করার জন্য!");
+                return;
+            }
+
+            // UTF-8 BOM so Excel opens Bengali characters properly
+            let csvContent = "\uFEFF";
+            csvContent += "Order ID,Date,Customer Name,Phone,Address,Product,Quantity,Amount (BDT),Status,Payment\n";
+
+            orders.forEach(o => {
+                const escapeCsv = (str) => `"${(str || '').toString().replace(/"/g, '""')}"`;
+                csvContent += [
+                    escapeCsv(o.id),
+                    escapeCsv(o.date),
+                    escapeCsv(o.name),
+                    escapeCsv(o.phone),
+                    escapeCsv(o.address),
+                    escapeCsv(o.product),
+                    escapeCsv(o.quantity),
+                    escapeCsv(o.total),
+                    escapeCsv(o.status),
+                    escapeCsv(o.payment)
+                ].join(",") + "\n";
+            });
+
+            const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement("a");
+            link.setAttribute("href", url);
+            link.setAttribute("download", `sorkar_orders_${new Date().toISOString().split('T')[0]}.csv`);
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+</body>
+</html>
