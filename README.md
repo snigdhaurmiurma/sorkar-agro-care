@@ -1,5 +1,7 @@
 # Sorkar Agro Care (সরকার এগ্রো কেয়ার) - Production Website
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fsnigdhaurmiurma%2Fsorkar-agro-care)
+
 A complete, production-ready landing and e-commerce website clone of [sorkaragrocare.com](https://www.sorkaragrocare.com/) configured for instant free publishing, telephone calling, and online order management.
 
 - **Hotline & WhatsApp Number**: `01708-938787` (`+880 1708-938787`)
