@@ -365,18 +365,18 @@
 
                     <!-- Full Size Container: naturally fits the 720x720 square video with 0% crop -->
                     <div class="relative rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl border-4 border-white ring-2 ring-sky-200 bg-black aspect-square max-w-full">
-                        <div id="video-overlay" onclick="startHeroVideo()" class="absolute inset-0 z-10 flex flex-col items-center justify-center cursor-pointer bg-gradient-to-t from-black/60 via-black/20 to-black/30 hover:bg-black/40 transition-all duration-300">
-                            <div class="w-16 h-16 md:w-24 md:h-24 rounded-full bg-gradient-to-tr from-sky-600 to-sky-400 flex items-center justify-center shadow-[0_0_30px_rgba(14,165,233,0.7)] group-hover:scale-110 transition-transform duration-300">
-                                <i class="fa-solid fa-play text-white text-2xl md:text-4xl ml-1 md:ml-2"></i>
-                            </div>
-                            <span class="mt-3 md:mt-4 text-white font-bold text-xs md:text-base bg-black/70 backdrop-blur-sm px-5 py-2 rounded-full border border-white/20 shadow-lg">
-                                ভিডিও চালু করতে ক্লিক করুন ▶
-                            </span>
-                        </div>
+                        <!-- Floating Sound Toggle Button -->
+                        <button id="sound-toggle-btn" onclick="toggleHeroSound(event)" class="absolute top-3 right-3 md:top-4 md:right-4 z-20 flex items-center gap-2 bg-black/75 hover:bg-black text-white text-xs md:text-sm font-bold px-3 py-1.5 rounded-full border border-white/30 backdrop-blur-md shadow-lg transition transform hover:scale-105 active:scale-95 cursor-pointer">
+                            <i id="sound-icon" class="fa-solid fa-volume-xmark text-yellow-400"></i>
+                            <span id="sound-text">সাউন্ড অন করুন</span>
+                        </button>
+
                         <video
                             id="hero-video"
                             class="w-full h-full object-contain block"
-                            preload="metadata"
+                            autoplay
+                            muted
+                            loop
                             playsinline
                             controls
                             poster="images/banner.jpg">
@@ -435,25 +435,45 @@
         </section>
 
         <script>
-        function startHeroVideo() {
-            const overlay = document.getElementById('video-overlay');
+        function toggleHeroSound(event) {
+            if (event) event.stopPropagation();
             const video = document.getElementById('hero-video');
-            if (overlay) {
-                overlay.style.opacity = '0';
-                overlay.style.pointerEvents = 'none';
-            }
-            if (video) {
-                video.play();
+            const icon = document.getElementById('sound-icon');
+            const text = document.getElementById('sound-text');
+            if (!video) return;
+            video.muted = !video.muted;
+            if (video.muted) {
+                if (icon) icon.className = 'fa-solid fa-volume-xmark text-yellow-400';
+                if (text) text.textContent = 'সাউন্ড অন করুন';
+            } else {
+                if (icon) icon.className = 'fa-solid fa-volume-high text-green-400 animate-pulse';
+                if (text) text.textContent = 'সাউন্ড চলছে';
             }
         }
+
+        // Automatic video start without tapping
         document.addEventListener('DOMContentLoaded', function() {
             const video = document.getElementById('hero-video');
-            const overlay = document.getElementById('video-overlay');
-            if (video && overlay) {
-                video.addEventListener('play', function() {
-                    overlay.style.opacity = '0';
-                    overlay.style.pointerEvents = 'none';
-                });
+            if (video) {
+                video.muted = true;
+                const tryPlay = () => {
+                    const promise = video.play();
+                    if (promise !== undefined) {
+                        promise.catch(() => {});
+                    }
+                };
+                tryPlay();
+
+                // Fallback: trigger playback on first scroll or touch if browser queued it
+                const playOnInteract = () => {
+                    tryPlay();
+                    window.removeEventListener('scroll', playOnInteract);
+                    window.removeEventListener('touchstart', playOnInteract);
+                    window.removeEventListener('click', playOnInteract);
+                };
+                window.addEventListener('scroll', playOnInteract, { passive: true, once: true });
+                window.addEventListener('touchstart', playOnInteract, { passive: true, once: true });
+                window.addEventListener('click', playOnInteract, { passive: true, once: true });
             }
         });
         </script>
