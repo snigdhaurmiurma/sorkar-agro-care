@@ -355,10 +355,63 @@
                     ওয়াটার প্ল্যাঙ্কটন প্লাস এবং ডাবল গ্রোথ প্লাস - একটি পূর্ণাঙ্গ সমাধান যা আপনার পুকুরের পরিবেশ ঠিক রাখে এবং মাছের দ্রুত বৃদ্ধি নিশ্চিত করে।
                 </p>
                 
-                <!-- Hero Image Carousel / Presentation -->
-                <div class="relative group mb-10 px-2 max-w-4xl mx-auto">
+                <!-- HERO STARTING VIDEO SHOWCASE -->
+                <div class="relative group my-6 px-2 max-w-3xl mx-auto">
+                    <div class="absolute inset-0 bg-sky-500/15 blur-[60px] rounded-3xl scale-95 -z-10"></div>
+                    
+                    <div class="inline-flex items-center gap-2 bg-red-600 text-white text-xs md:text-sm font-black px-4 py-1.5 rounded-full mb-3 shadow-md uppercase tracking-wider animate-pulse">
+                        <i class="fa-solid fa-circle-play"></i> লাইভ ভিডিও প্রমাণ • দেখুন কীভাবে কাজ করে
+                    </div>
+
+                    <div class="relative rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl border-4 border-white ring-2 ring-sky-200 bg-black aspect-video max-w-full">
+                        <div id="video-overlay" onclick="startHeroVideo()" class="absolute inset-0 z-10 flex flex-col items-center justify-center cursor-pointer bg-gradient-to-t from-black/70 via-black/30 to-black/30 hover:bg-black/40 transition-all duration-300">
+                            <div class="w-16 h-16 md:w-24 md:h-24 rounded-full bg-gradient-to-tr from-sky-600 to-sky-400 flex items-center justify-center shadow-[0_0_30px_rgba(14,165,233,0.7)] group-hover:scale-110 transition-transform duration-300">
+                                <i class="fa-solid fa-play text-white text-2xl md:text-4xl ml-1 md:ml-2"></i>
+                            </div>
+                            <span class="mt-3 md:mt-4 text-white font-bold text-xs md:text-base bg-black/60 backdrop-blur-sm px-4 py-1.5 rounded-full border border-white/20">
+                                ভিডিও দেখতে এখানে ক্লিক করুন ▶
+                            </span>
+                        </div>
+                        <video
+                            id="hero-video"
+                            class="w-full h-full object-cover block"
+                            preload="metadata"
+                            playsinline
+                            controls
+                            poster="images/banner.jpg">
+                            <source src="videos/promo-video.mp4" type="video/mp4">
+                            আপনার ব্রাউজার ভিডিও সাপোর্ট করে না।
+                        </video>
+                    </div>
+                </div>
+
+                <!-- Immediate Action Buttons under Video -->
+                <div class="flex flex-col sm:flex-row gap-3 justify-center items-center mt-6 mb-8 px-4">
+                    <a href="#order-form" class="btn-premium shine-effect w-full sm:w-auto text-base md:text-xl py-3.5 px-8 md:px-10 rounded-full shadow-xl">
+                        প্যাকেজ অর্ডার করুন (৬০০৳) <i class="fa-solid fa-cart-shopping ml-2"></i>
+                    </a>
+                    <a href="tel:01708938787" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-slate-800 text-white font-black text-sm md:text-base py-3.5 px-6 rounded-full shadow-lg transition">
+                        <i class="fa-solid fa-phone text-sky-400 animate-pulse"></i> কল করুন: 01708-938787
+                    </a>
+                    <a href="https://wa.me/8801708938787" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-white font-black text-sm md:text-base py-3.5 px-6 rounded-full shadow-lg transition">
+                        <i class="fab fa-whatsapp text-lg"></i> WhatsApp
+                    </a>
+                </div>
+
+                <!-- Trust Guarantee Badges -->
+                <div class="flex flex-wrap justify-center items-center gap-4 md:gap-8 text-xs md:text-sm text-slate-600 font-bold mb-10 pb-6 border-b border-sky-100">
+                    <span class="inline-flex items-center gap-1.5"><i class="fa-solid fa-truck-fast text-sky-600"></i> সারাদেশে ক্যাশ অন ডেলিভারি</span>
+                    <span class="inline-flex items-center gap-1.5"><i class="fa-solid fa-shield-halved text-green-600"></i> ১০০% অরিজিনাল গ্যারান্টি</span>
+                    <span class="inline-flex items-center gap-1.5"><i class="fa-solid fa-box-open text-orange-500"></i> দেখে নেওয়ার সুবিধা</span>
+                </div>
+
+                <!-- Product Banner Carousel -->
+                <div class="relative group mb-8 px-2 max-w-4xl mx-auto">
+                    <p class="text-xs font-black text-sky-700 tracking-widest uppercase mb-3">
+                        <i class="fa-solid fa-images mr-1"></i> পণ্যের অফার পোস্টার
+                    </p>
                     <div class="absolute inset-0 bg-sky-600/10 blur-[80px] rounded-full scale-90 -z-10"></div>
-                    <div class="w-full max-w-[550px] mx-auto rounded-[2rem] md:rounded-[3rem] border-4 border-white shadow-2xl float-anim overflow-hidden bg-white ring-2 ring-sky-50/50 relative aspect-square">
+                    <div class="w-full max-w-[500px] mx-auto rounded-[2rem] border-4 border-white shadow-2xl float-anim overflow-hidden bg-white ring-2 ring-sky-50/50 relative aspect-square">
                         <div class="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-20">
                             <button onclick="prevHeroSlide()" class="slider-arrow bg-white/80 hover:bg-white" aria-label="Previous Slide">
                                 <i class="fa-solid fa-chevron-left"></i>
@@ -377,12 +430,32 @@
                              alt="Water Plankton Plus & Double Growth Plus">
                     </div>
                 </div>
-
-                <a href="#order-form" class="btn-premium shine-effect w-full md:w-auto text-lg md:text-2xl py-3 md:py-4 px-8 md:px-12 rounded-full">
-                    প্যাকেজ অর্ডার করুন <i class="fa-solid fa-cart-shopping ml-2"></i>
-                </a>
             </div>
         </section>
+
+        <script>
+        function startHeroVideo() {
+            const overlay = document.getElementById('video-overlay');
+            const video = document.getElementById('hero-video');
+            if (overlay) {
+                overlay.style.opacity = '0';
+                overlay.style.pointerEvents = 'none';
+            }
+            if (video) {
+                video.play();
+            }
+        }
+        document.addEventListener('DOMContentLoaded', function() {
+            const video = document.getElementById('hero-video');
+            const overlay = document.getElementById('video-overlay');
+            if (video && overlay) {
+                video.addEventListener('play', function() {
+                    overlay.style.opacity = '0';
+                    overlay.style.pointerEvents = 'none';
+                });
+            }
+        });
+        </script>
 
         <!-- PRODUCT DETAILS SECTION -->
         <section id="products" class="py-12 bg-slate-50/80 border-y border-sky-50">
@@ -565,27 +638,6 @@
                     <a href="#order-form" class="btn-premium shine-effect w-full md:w-auto text-lg md:text-2xl py-3 md:py-4 px-8 md:px-12 rounded-full">
                         অর্ডার করতে চাই <i class="fa-solid fa-cart-shopping ml-2"></i>
                     </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- PROMOTIONAL VIDEO SECTION -->
-        <section class="py-14 bg-gradient-to-b from-sky-50 to-white text-center border-t border-sky-100">
-            <div class="container mx-auto px-4 max-w-4xl">
-                <span class="inline-block bg-sky-100 text-sky-700 font-black tracking-widest uppercase text-xs md:text-sm px-4 py-1.5 rounded-full mb-3">প্রমোশনাল ভিডিও</span>
-                <h2 class="text-2xl md:text-4xl font-black text-slate-900 mt-1 mb-2">দেখুন কীভাবে কাজ করে</h2>
-                <p class="text-slate-500 text-sm md:text-base mb-8 max-w-xl mx-auto">আমাদের পণ্য ব্যবহার করে হাজারো খামারি উপকৃত হয়েছেন। নিজেই দেখুন কার্যকারিতা!</p>
-                <!-- Self-hosted HTML5 video — responsive 16:9 -->
-                <div class="rounded-2xl overflow-hidden shadow-2xl border border-sky-100 mx-auto" style="max-width:734px;">
-                    <video
-                        class="w-full block"
-                        controls
-                        preload="metadata"
-                        playsinline
-                        style="background:#000;">
-                        <source src="videos/promo-video.mp4" type="video/mp4">
-                        আপনার ব্রাউজার ভিডিও সাপোর্ট করে না।
-                    </video>
                 </div>
             </div>
         </section>
